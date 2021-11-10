@@ -232,7 +232,72 @@ section {
 /* -------------------------------------
 -----いいねボタン、SNSリンクアイコン----
 --------------------------------------- */
+.sns-link-btn {
+  display: flex;
+  margin-top: 30px;
+  justify-content: space-between;
+}
+.sns-link-btn li {
+  width: 30px;
+  height: 31px;
+}
+.sns-link-btn li:first-of-type {
+  width: 107px;
+}
+.shop-good button {
+  width: 100%;
+  height: 100%;
+  font-size: 12px;
+  border: 1px solid rgb(32, 32, 32);
+  border-radius: 5px;
+  color: gray;
+  text-align: center;
+}
 
 /* -------------------------------------
 -----おすすめ店舗----
---------------------------------------- */ ;
+--------------------------------------- */
+.single-shop-recom {
+  margin-top: 59px;
+}
+.shop-recom-h3 {
+  font-size: 14px;
+  line-height: 1.57;
+  text-align: center;
+}
+.recom-ul {
+  margin-top: 20px;
+}
+.recom-ul li {
+  height: 230px;
+}
+.recom-ul li img {
+  height: 181px;
+}
+/* サムネイル */
+.recom-img {
+  position: relative;
+}
+.recom-title {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 86px;
+  height: 36px;
+  color: var(--white-color);
+  text-align: center;
+  padding-top: 10px;
+}
+.honkaku {
+  background-color: var(--honkaku-color);
+}
+.naru {
+  background-color: var(--naru-color);
+}
+.recom-good {
+  width: 45px;
+  height: 39.32px;
+}
+.recom-good img {
+  object-fit: contain;
+}
