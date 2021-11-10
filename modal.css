@@ -1,0 +1,129 @@
+@charset "utf-8";
+body {
+  font-family: "Yu Gothic", "游ゴシック", YuGothic, "游ゴシック体",
+    "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
+  color: #0f447c;
+}
+
+/*-----------------------
+------commonに入れる------
+------------------------*/
+img {
+  width: 100%;
+}
+p {
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.025em;
+}
+.h2-font {
+  font-size: 20px;
+  font-weight: bold;
+}
+.h3-font {
+}
+/*-----------------------
+-----ページ内共通---------
+------------------------*/
+h2 {
+  text-align: center;
+}
+.home-section {
+  padding: 40px 0;
+}
+.home-intro,
+.home-access,
+.home-spe {
+  padding-left: 45px;
+  padding-right: 45px;
+}
+
+/*-----------------------
+-------ジャンボトロン-----
+------------------------*/
+.section-mv {
+  position: relative;
+}
+
+.mv {
+  height: 100vh;
+  object-fit: cover;
+}
+
+.mv-logo {
+  position: absolute;
+  top: 50%;
+  /* left: 50%; */
+  transform: translate(0, -50%);
+}
+
+/*-----------------------
+----------イントロ--------
+------------------------*/
+.home-intro {
+  text-align: center;
+  background-color: #faf3e5;
+}
+.catchcopy {
+  font-family: "Yu Gothic", "游ゴシック", YuGothic, "游ゴシック体",
+    "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
+  color: #0f0447;
+  display: inline-block;
+  margin: 0 auto;
+  font-feature-settings: "palt";
+  text-align: left;
+  line-height: 1.6em;
+  letter-spacing: 0.1em;
+}
+.catchcopy-bg {
+  background: linear-gradient(transparent 70%, #f39e65 0%);
+}
+.home-intro-txt {
+  /* /* display: inline-block; */
+  text-align: left;
+  padding-top: 25px;
+}
+/*-----------------------
+----------スライド--------
+------------------------*/
+home-slide-title {
+  text-align: center;
+}
+
+/*------------------------------
+------ハンバーガーメニュー------
+-------------------------------*/
+/* ハンバーガー起動ボタン */
+.openModalBtn {
+  position: fixed;
+  width: 80px;
+  height: 80px;
+  background-color: #fff;
+  top: 0;
+  left: 0;
+  z-index: 500;
+  font-size: 70px;
+  text-align: center;
+  padding-top: 5px;
+}
+/* ハンバーガー中身 */
+.open-nav {
+  width: 100%;
+  height: 1000px;
+  z-index: 300;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color:white;
+  text-align: center;
+}
+
+.open-nav dt,
+.open-nav dd {
+  font-size: 20px;
+  height: 100px;
+  border: 1px black solid;
+  /* border-collapse: collapse; */
+  text-align: center;
+  vertical-align: middle;
+}
