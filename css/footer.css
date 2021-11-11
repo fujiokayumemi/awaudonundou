@@ -1,0 +1,34 @@
+@charset "utf-8";
+
+/* -----------------------------------
+-------これはfooter.cssファイルです------
+------------------------------------- */
+
+.footer {
+  text-align: center;
+  background-color: var(--main-color);
+  color: var(--white-color);
+  font-size: 12px;
+  font-weight: normal;
+  letter-spacing: 0.11em;
+  line-height: 1.6em;
+}
+
+.footer-nav {
+  text-align: left;
+}
+
+.footer-sns {
+  display: flex;
+  padding-top: 20px;
+  justify-content: center;
+}
+
+.footer-sns-item {
+  width: 30px;
+  height: 30px;
+}
+
+.footer-sns-item:nth-child(even) {
+  margin: 0 8px;
+}
