@@ -76,3 +76,45 @@ p {
   background-color: var(--main-color);
   color: var(--white-color);
 }
+
+/* -------パンくずリスト-------- */
+.pkz {
+  background-color: black;
+  height: 33px;
+  font-size: 12px;
+  font-weight: normal;
+  color:var(--sub-color);
+  padding: 0 45px;
+}
+.pkz-ul {
+  height: 100%;
+  display: flex;
+  align-items: center;
+
+  vertical-align: middle;
+}
+.pkz-ul li {
+  padding-left: 2px;
+}
+.pkz-ul li + li:before {
+  content: "";
+  border-top: 2px solid;
+  border-right: 2px solid;
+  transform: rotate(45deg);
+  /* color: darkgray; */
+  margin-right: 4px;
+  width: 10px;
+  height: 10px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+@media screen and (min-width: 1025px) /* パンくずpc用 */
+{
+  .pkz {
+    height: 40px;
+    font-size: 18px;
+    padding:0 20%;
+  }
+
+}
