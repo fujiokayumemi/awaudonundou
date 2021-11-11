@@ -3,14 +3,13 @@
 @media screen and (min-width: 600px) {
 }
 
-
 /* ここからパンくずリスト */
 .single-shop-pkz {
-  background-color: black;
+  background-color: var(--pkz-color);
+  color: var(--sub-color);
   height: 33px;
   font-size: 12px;
   font-weight: normal;
-  color:var(--sub-color);
   padding: 0 45px;
 }
 .pkz-ul {
@@ -40,11 +39,9 @@
   .single-shop-pkz {
     height: 40px;
     font-size: 18px;
-    padding:0 20%;
+    padding: 0 20%;
   }
-
 }
-
 
 /*-----------------------
         トップの画像
@@ -83,11 +80,10 @@
 
 @media screen and (min-width: 600px) {
   .single-cont-wrap {
-  padding: 60px 20% 0;
-}
+    padding: 60px 20% 0;
+  }
 }
 /* 余白(wrapperの外側)  20% */
-
 
 /*------- タイトル・ライター -----------*/
 .single-writer-wrap {
@@ -123,33 +119,29 @@
 
 @media screen and (min-width: 1025px) {
   .icon {
-  width: 70px;
-  height: 70px;
-  /* margin: 15px 10px 0; */
+    width: 70px;
+    height: 70px;
+    /* margin: 15px 10px 0; */
+  }
+
+  .icon-img {
+    width: 70px;
+    height: 70px;
+  }
+
+  .writer-text {
+    margin: 15px 0;
+  }
+
+  .day {
+    /* line-height: 1.57; */
+    font-size: 20px;
+  }
+  .writer-name {
+    font-size: 20px;
+    /* line-height: 1.57; */
+  }
 }
-
-.icon-img {
-  width: 70px;
-  height: 70px;
-}
-
-.writer-text {
-  margin: 15px 0;
-}
-
-
-.day {
-  /* line-height: 1.57; */
-  font-size: 20px;
-}
-.writer-name {
-  font-size: 20px;
-  /* line-height: 1.57; */
-}
-}
-
-
-
 
 /*---------------
  ----記事内容----
@@ -163,22 +155,30 @@
   margin: 40px 0;
 }
 
+/* ！！！！！！！！！！！
+
+変更しました
+
+！！！！！！！！！！！！*/
+
 .cont-tag-p {
-  font-size: 5px;
+  font-weight: normal;
   margin-bottom: 10px;
+  display: block;
 }
 
+/*！！！！！！！！！！！
+
+変更しました
+
+！！！！！！！！！！！！！！ */
 /* オレンジボタン */
-.orange-btn {
-  background-color: #df620e;
-  color: white;
+.btn-orange {
+  border-radius: 5px;
   font-size: 14px;
   width: 100%;
-  /* height: 25px; */
   padding: 10px;
-  /* height: 25px; */
   text-align: center;
-  border-radius: 5px;
   margin-bottom: 40px;
 }
 
@@ -201,56 +201,59 @@
 
 .twi,
 .fb,
-.insta{
+.insta {
   width: 20px;
   margin-left: 15px;
 }
 
-@media screen and (min-width: 1025px){
-    .cont-img {
-  margin: 50px 0;
-}
+@media screen and (min-width: 1025px) {
+  .cont-img {
+    margin: 50px 0;
+  }
 
-.cont-tag {
-  margin: 100px 0 60px;
-}
+  .cont-tag {
+    margin: 100px 0 60px;
+  }
 
-.cont-tag-p {
-  font-size: 18px;
-  margin-bottom: 20px;
-}
+  .cont-tag-p {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
 
-.shop-detail-btn{
-  text-align: center;
-}
-/* オレンジボタン */
-.orange-btn {
-  font-size: 21px;
-  width: 350px;
-  height: 55px;
-  margin-bottom: 60px;
-}
+  .shop-detail-btn {
+    text-align: center;
+  }
 
-/* 共有 */
-.share {
-  padding-top: 0;
-}
+  /* ！！！！！！！！
 
-.good {
-  font-size: 20px;
-  width: 203px;
-  height: 47px;
-}
+  変更しました
 
-.twi,
-.fb,
-.insta {
-  width: 50px;
-  margin-left: 15px;
-}
+  ！！！！！！！！！！ */
+  /* オレンジボタン */
+  .btn-orange {
+    font-size: 21px;
+    width: 350px;
+    height: 55px;
+    margin-bottom: 60px;
+  }
+  /* 共有 */
+  .share {
+    padding-top: 0;
+  }
 
-}
+  .good {
+    font-size: 20px;
+    width: 203px;
+    height: 47px;
+  }
 
+  .twi,
+  .fb,
+  .insta {
+    width: 50px;
+    margin-left: 15px;
+  }
+}
 
 /*------------------
 ----おすすめ記事----
@@ -259,7 +262,7 @@
   padding: 40px 45px 48px;
 }
 
-.recom-cont{
+.recom-cont {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -267,9 +270,16 @@
 
 .recom-title {
   text-align: center;
-  margin-bottom:40px;
+  margin-bottom: 40px;
 }
+/* !!!!!!
 
+変更しました
+
+!!!!!!!!!!!! */
+.recom-title-p {
+  font-weight: bold;
+}
 .recom-article {
   margin-bottom: 20px;
   width: 100%;
@@ -305,34 +315,33 @@
 }
 
 @media screen and (min-width: 600px) {
-.recom-wrap {
-  padding: 110px 20%;
-}
+  .recom-wrap {
+    padding: 110px 20%;
+  }
 }
 
 @media screen and (min-width: 1025px) {
-.recom-wrap {
-  padding: 110px 20%;
-}
+  .recom-wrap {
+    padding: 110px 20%;
+  }
 
-.recom-title {
-  margin-bottom:100px;
-}
+  .recom-title {
+    margin-bottom: 100px;
+  }
 
-.recom-article {
-  width: 49%;
-  margin-bottom: 40px;
-}
-.recom-article-last{
-  width: 100%;
-}
+  .recom-article {
+    width: 49%;
+    margin-bottom: 40px;
+  }
+  .recom-article-last {
+    width: 100%;
+  }
 
-.recom-eye {
-  font-size: 25px;
-}
+  .recom-eye {
+    font-size: 25px;
+  }
 
-.recom-article-txt {
-  font-size: 1em;
-}
-
+  .recom-article-txt {
+    font-size: 1em;
+  }
 }
