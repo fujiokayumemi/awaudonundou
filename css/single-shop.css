@@ -10,21 +10,30 @@
 /* font-weightはboldかかっているので
 regularになっているものはnormalをつける */
 .shop-sec-padding {
-  padding: 0 45px;
+  width: 75%;
+  margin: 30px auto 0;
 }
 .shop-space-top {
   margin-top: 20px;
 }
-section {
-  margin-top: 30px;
+@media screen and (min-width: 600px) {
+  .shop-sec-padding {
+    /* padding: 0 8%; */
+  }
+  section {
+    margin-top: 45px;
+  }
+  .shop-space-top {
+    /* margin-top: 45px; */
+  }
 }
 @media screen and (min-width: 1025px) {
   .shop-sec-padding {
-    padding: 0 20%;
-  }
-  section {
     margin-top: 85px;
   }
+  /* section {
+    margin-top: 85px;
+  } */
   .shop-space-top {
     margin-top: 45px;
   }
@@ -64,8 +73,8 @@ section {
 --------------------------------------- */
 .single-shop-top {
   width: 100%;
-  color: var(--sub-color);
-  background-image: url(../img/kevin-doran-gqCoeionhto-unsplash.jpg);
+  color: var(--white-color);
+  background-image: url(../img/s-shop-top.jpg);
   background-size: cover;
 }
 
@@ -242,9 +251,8 @@ section {
   .shop-meter {
   }
   .shop-meter-img {
-    width: 1000px;
     height: 315px;
-    margin-left: 75px;
+    padding-left: 75px;
   }
 }
 
@@ -260,23 +268,25 @@ section {
 .shop-basic-table tr {
   font-size: 12px;
   height: 31px;
+  width: 100%;
 }
 .shop-basic-table th {
   background-color: var(--sub-color);
-  width: 83px;
-  padding-left: 11px;
+  min-width: 78px;
+  padding-left: 10px;
   vertical-align: middle;
   border: 1px solid var(--main-color);
   border-style: solid none;
 }
 .shop-basic-table td {
-  width: calc(100% - 83px);
+  width: auto;
   padding-left: 11px;
   vertical-align: middle;
   border: 1px solid var(--main-color);
   border-style: solid none;
 }
-
+@media screen and (min-width: 1025px) {
+}
 @media screen and (min-width: 1025px) {
   .shop-basic-wrap {
     display: flex;
@@ -291,7 +301,9 @@ section {
     height: 60px;
   }
   .shop-basic-table th {
-    width: 141px;
+    max-width: 141px;
+  }
+  .shop-basic-table td {
   }
 }
 
@@ -326,6 +338,7 @@ section {
   height: 397px;
   margin-left: auto;
   margin-right: auto;
+  padding-top: 8px;
 }
 .shop-report-Instagram img {
   width: 100%;
@@ -395,7 +408,11 @@ section {
   color: gray;
   text-align: center;
 }
-
+@media screen and (min-width: 600px) {
+  .sns-link-btn {
+    width: 45%;
+  }
+}
 @media screen and (min-width: 1025px) {
   .sns-link-btn {
     width: 470px;
@@ -403,7 +420,7 @@ section {
   }
   .sns-link-btn li {
     width: 52px;
-    height: 51px;
+    height: 53px;
   }
   .sns-link-btn li:first-of-type {
     width: 203px;
@@ -423,8 +440,14 @@ section {
 /* -------------------------------------
 ------------おすすめ店舗--------------
 --------------------------------------- */
+.shop-aside {
+  width: 75%;
+  margin: 0 auto;
+}
 .single-shop-recom {
-  margin-top: 59px;
+  padding-top: 30px;
+  background-color: var(--sub-color);
+  margin-top: 40px;
 }
 .shop-recom-h3 {
   font-size: 14px;
@@ -434,21 +457,39 @@ section {
 
 .recom-ul {
   margin-top: 20px;
-  margin-bottom: 50px;
+  padding-bottom: 40px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
+
 @media screen and (min-width: 500px) {
+  /* .shop-aside {
+    padding: 0 20%;
+  }
+ */
   .single-shop-recom {
-    margin-top: 81px;
+    margin-top: 50px;
   }
   .shop-recom-h3 {
-    font-size: 36px;
+    /* font-size: 30px; */
   }
   .recom-ul {
-    margin-top: 90px;
-    margin-bottom: 135px;
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  .single-shop-recom {
+    padding-top: 30px;
+    padding-bottom: 135px;
+    margin-top: 100px;
+  }
+  .shop-recom-h3 {
+    font-size: 30px;
+    margin-top: 50px;
+  }
+  .recom-ul {
+    margin-top: 60px;
   }
 }
 
@@ -465,6 +506,10 @@ section {
   height: 181px;
   z-index: -1;
 }
+.recom-ul li {
+  width: 100%;
+  margin-top: 0px;
+}
 
 @media screen and (min-width: 500px) {
   .recom-ul li + li {
@@ -473,14 +518,21 @@ section {
   .recom-img {
     height: auto;
   }
-
   .recom-ul li {
     width: 47%;
-    margin-top: 50px;
+    margin-top: 0px;
   }
   .recom-img-bg {
     width: 100%;
+    height: 200px;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .recom-img-bg {
     height: 430px;
+  }
+  .recom-ul li {
+    margin-top: 50px;
   }
 }
 
@@ -507,6 +559,9 @@ section {
 }
 .naru {
   background-color: var(--naru-color);
+}
+.tarai {
+  background-color: var(--tarai-color);
 }
 
 /* ----------いいねボタン--------- */
