@@ -55,7 +55,6 @@ p {
     font-size: 30px;
   }
 
-  /* 変更しました！！！！！ */
     p {
     font-size: 20px;
     line-height: 1.6;
@@ -70,6 +69,8 @@ p {
 .btn-orange {
   background-color: var(--btn-color);
   color: var(--white-color);
+  border-radius: 5px;
+  text-align: center;
 }
 
 .btn-blue {

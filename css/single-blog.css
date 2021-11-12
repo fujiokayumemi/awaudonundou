@@ -1,58 +1,14 @@
 @charset "utf-8";
-/* タブレット版 */
-@media screen and (min-width: 600px) {
-}
-
-/* ここからパンくずリスト */
-.single-shop-pkz {
-  background-color: var(--pkz-color);
-  color: var(--sub-color);
-  height: 33px;
-  font-size: 12px;
-  font-weight: normal;
-  padding: 0 45px;
-}
-.pkz-ul {
-  height: 100%;
-  display: flex;
-  align-items: center;
-
-  vertical-align: middle;
-}
-.pkz-ul li {
-  padding-left: 2px;
-}
-.pkz-ul li + li:before {
-  content: "";
-  border-top: 2px solid;
-  border-right: 2px solid;
-  transform: rotate(45deg);
-  /* color: darkgray; */
-  margin-right: 4px;
-  width: 10px;
-  height: 10px;
-  display: inline-block;
-  vertical-align: middle;
-}
-
-@media screen and (min-width: 1025px) {
-  .single-shop-pkz {
-    height: 40px;
-    font-size: 18px;
-    padding: 0 20%;
-  }
-}
-
 /*-----------------------
         トップの画像
  ----------------------*/
 
-.single-top-img {
+.single-blog-top-img-wrap {
   width: 100%;
   position: relative;
 }
 
-.single-top-img-img {
+.single-blog-top-img {
   height: 113px;
   filter: brightness(50%);
 }
@@ -66,7 +22,7 @@
 }
 
 @media screen and (min-width: 1025px) {
-  .single-top-img-img {
+  .single-blog-top-img {
     height: 304px;
   }
 }
@@ -74,19 +30,19 @@
 /*-------------------
         コンテンツ
  -------------------*/
-.single-cont-wrap {
+.single-blog-cont-wrap {
   padding: 20px 45px 0;
 }
 
 @media screen and (min-width: 600px) {
-  .single-cont-wrap {
+  .single-blog-cont-wrap {
     padding: 60px 20% 0;
   }
 }
 /* 余白(wrapperの外側)  20% */
 
 /*------- タイトル・ライター -----------*/
-.single-writer-wrap {
+.single-blog-writer-wrap {
   display: flex;
   margin-bottom: 37px;
 }
@@ -155,37 +111,24 @@
   margin: 40px 0;
 }
 
-/* ！！！！！！！！！！！
-
-変更しました
-
-！！！！！！！！！！！！*/
-
 .cont-tag-p {
   font-weight: normal;
   margin-bottom: 10px;
   display: block;
 }
 
-/*！！！！！！！！！！！
-
-変更しました
-
-！！！！！！！！！！！！！！ */
 /* オレンジボタン */
 .btn-orange {
-  border-radius: 5px;
   font-size: 14px;
   width: 100%;
   padding: 10px;
-  text-align: center;
   margin-bottom: 40px;
 }
 
 /* 共有 */
 .share {
   display: flex;
-  padding: 40px 0 0;
+  padding: 20px 0;
 }
 
 .good {
@@ -206,6 +149,21 @@
   margin-left: 15px;
 }
 
+@media screen and (min-width: 600px) {
+.good{
+  font-size: 15px;
+  width: 150px;
+  height: 35px;
+}
+
+.twi,
+.fb,
+.insta {
+  width: 35px;
+}
+}
+
+
 @media screen and (min-width: 1025px) {
   .cont-img {
     margin: 50px 0;
@@ -224,11 +182,6 @@
     text-align: center;
   }
 
-  /* ！！！！！！！！
-
-  変更しました
-
-  ！！！！！！！！！！ */
   /* オレンジボタン */
   .btn-orange {
     font-size: 21px;
@@ -251,7 +204,6 @@
   .fb,
   .insta {
     width: 50px;
-    margin-left: 15px;
   }
 }
 
@@ -260,6 +212,7 @@
 -------------------- */
 .recom-wrap {
   padding: 40px 45px 48px;
+  background-color:var(--sub-color);
 }
 
 .recom-cont {
@@ -272,11 +225,7 @@
   text-align: center;
   margin-bottom: 40px;
 }
-/* !!!!!!
 
-変更しました
-
-!!!!!!!!!!!! */
 .recom-title-p {
   font-weight: bold;
 }
