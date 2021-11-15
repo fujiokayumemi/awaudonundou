@@ -1,18 +1,18 @@
 @charset "utf-8";
+/* プロパティの順番を整えました！ */
 /*-------------
 タイトル画像
 --------------*/
-.course-top-img {
-  width: 100%;
+
+.page-header{
   position: relative;
 }
 
-.course-top-img-img {
-  height: 113px;
+.page-header-img {
   filter: brightness(50%);
 }
 
-.course-top-img-txt-wrap {
+.page-header-txt-wrap {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -21,8 +21,8 @@
 }
 
 .top-img-title {
-  color: white;
   padding-bottom: 10px;
+  color:  var(--white-color);
 }
 
 .tag-wrap {
@@ -30,21 +30,30 @@
 }
 
 .tag {
+  margin-right: 15px;
+  color:  var(--white-color);
   font-size: 10px;
   text-align: center;
-  border: 1px solid;
-  padding: 3px 10px;
-  border-radius: 25px;
-  background-color: white;
-  margin-right: 5px;
+}
+
+@media screen and (min-width: 1025px) {
+.page-header-txt-wrap{
+  width: 60%;
+}
+
+.tag{
+  margin-right: 35px;
+  font-size: 22px;
+  padding-top: 10px;
+}
 }
 
 /*---------------
 コースの概要
 --------------*/
 .course-routr {
-  text-align: center;
   padding-top: 77px;
+  text-align: center;
 }
 .course-subtitle {
   display: inline-block;
@@ -54,55 +63,42 @@
 /*--------- 徳島のマップ ----------*/
 .tokushima-map-wrap {
   position: relative;
+  z-index: 0;
   height: 300px;
-  display: block;
-  background-image: url(../img/logo/map-tokushima.png);
+  background-image: url(../img/logo/bg_single-course_tokushima_map.jpg);
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
-  z-index: 0;
-}
-
-.tokushima-map-wrap::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(255, 255, 255, 0.514);
-  z-index: 1;
 }
 
 .tokushima-map-ul-wrap {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 2;
-  /* padding-left: 20px; */
+  transform: translate(-50%, -60%);
+  z-index: 1;
 }
 
 .tokushima-map-ul {
   min-width: 300px;
-  line-height: 3;
-  font-size: 12px;
-  text-align: left;
   margin: 0 auto;
+  font-size: 12px;
   font-weight: normal;
+  text-align: left;
+  line-height: 3;
 }
 
 @media screen and (min-width: 1025px) {
-  .tokushima-map {
-    width: 40%;
+  .tokushima-map-wrap {
+    height: 600px;
   }
 
   .tokushima-map-ul {
     min-width: 300px;
-    line-height: 3;
+    margin: 0 auto;
     font-size: 20px;
     text-align: left;
-    margin: 0 auto;
+    line-height: 3;
   }
 }
 
@@ -111,23 +107,28 @@
  -------------------------*/
 
 .course-cont-wrap {
-  text-align: center;
   padding: 43px 0 75px;
+  text-align: center;
 }
 
 .course-number-sp {
   width: 30px;
   height: 30px;
-  padding: 5px;
-  text-align: center;
+  margin: 0 auto 21px;
+  padding: 3px;
   border-radius: 50%;
   background-color: var(--title-color);
   color: white;
-  margin: 0 auto 21px;
+  text-align: center;
 }
 
 .course-img {
+  display: block;
   margin-top: 13px;
+}
+
+.course-2-img {
+  margin-left: auto;
 }
 
 .course-txt-wrap {
@@ -136,53 +137,44 @@
   text-justify: inter-ideograph;
 }
 
-/* .course-txt-wrap-1{
-  padding-bottom: 0;
-} */
-
 .course-spot-name {
-  font-size: 20px;
   margin-bottom: 10px;
+  font-size: 20px;
   font-weight: bold;
 }
 
-.course-txt-group{
+.course-txt-group {
   padding-bottom: 20px;
 }
 
 .btn-orange {
-  font-size: 14px;
   width: 100%;
   height: 25px;
-  /* margin-bottom: 40px; */
+  font-size: 14px;
 }
 
-.move-icon-wrap{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  transform: translate(5%,0);
-  width: 95%;
-  padding-bottom: 45px;
+/*-------- 移動アイコン ----------*/
+
+.move-icon-wrap {
+  display: inline-block;
+  transform: translate(15%, 0);
 }
 
-/* .move-icon{
-  width: 30%;
-} */
+.move-icon-arrow-sp {
+  width: 50px;
+  object-fit: contain;
+}
 
-
-.move-icon-arrow {
-  width: 20%;
-  height:20%;
-  /* width: 50px;
-  height:100px; */
-  object-fit:contain;
+.move-icon-time {
+  float: right;
+  margin-left: 15px;
+  padding-top: 15%;
 }
 
 .course-1,
 .course-2,
 .course-3 {
-  padding-top: 28px;
+  padding: 28px 0 25px;
 }
 
 .course-2 {
@@ -192,75 +184,108 @@
 .course-3 {
   margin-bottom: 100px;
 }
+
 .goal {
   display: flex;
   justify-content: space-between;
-  margin: 0 auto;
   width: 20%;
+  margin: 0 auto;
 }
 
-
 @media screen and (max-width: 1024px) {
-  .course-number-pc {
+  .course-number-pc,.move-icon-arrow-pc {
     display: none;
   }
 }
-
 @media screen and (min-width: 1025px) {
   .course-cont-wrap {
-    padding: 0 20%;
+    padding: 0 20% 150px;
     text-align: left;
   }
   .course-img {
     width: 70%;
+    min-height: 400px;
   }
 
-
-
-  .course-title-wrap {
+  .course-title-wrap,.move-icon-arrow-sp {
     display: none;
   }
   .course-txt-wrap {
     position: absolute;
     top: 20%;
     right: 0;
+    max-width: 600px;
     width: 60%;
     padding: 0 80px 5px;
     border-radius: 10px;
-    background-color: rgba(255, 255, 255, 0.404);
     box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.081);
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
   }
 
-  .course-spot-name{
-    text-align: center;
-    font-size: 25px;
+  .course-txt-wrap-2 {
+    left: 0;
+  }
+
+  .course-txt {
+    text-align: left;
   }
 
   .course-number-pc {
+    transform: translate(0, -50%);
     font-size: 30px;
     text-align: center;
-    transform: translate(0, -50%);
   }
 
-  .course-txt-group{
+  .course-spot-name {
+    font-size: 25px;
+  }
+
+  .course-txt-group {
     transform: translate(0, -5%);
     padding-bottom: 0;
   }
 
-  .move-icon {
-  width: 35%;
-  margin: 200px auto;
-}
+  .btn-orange {
+    width: auto;
+    height: auto;
+    margin: 0 auto 20px;
+    padding: 8px 50px;
+    font-size: 18px;
+  }
+
+  /*------- 移動アイコンpc ----------*/
+  .move-icon-wrap {
+    margin-top: 100px;
+  }
+  .move-icon-arrow-pc{
+    width: 100px;
+  }
+
+  .move-icon-time {
+    margin-left: 0;
+  }
+
+  .move-icon-time-right {
+    float: right;
+    margin-right: 15px;
+    padding-top: 15%;
+  }
 
   .course-1,
   .course-2,
   .course-3 {
     position: relative;
-    margin-bottom: 80px;
+    margin-bottom: 50px;
   }
 
   .course-2 {
+     /* background-colorを無くす */
     background-color: transparent;
     text-align: right;
+  }
+
+  .course-3 {
+    margin-bottom: 150px;
   }
 }

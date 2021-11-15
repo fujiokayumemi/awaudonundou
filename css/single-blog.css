@@ -1,19 +1,20 @@
 @charset "utf-8";
+/* プロパティの順番を整えました！ */
 /*-----------------------
         トップの画像
  ----------------------*/
 
-.single-blog-top-img-wrap {
-  width: 100%;
+.page-header {
   position: relative;
+  width: 100%;
 }
 
-.single-blog-top-img {
+.page-header-img {
   height: 113px;
   filter: brightness(50%);
 }
 
-.top-img-txt {
+.top-img-title {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -22,7 +23,7 @@
 }
 
 @media screen and (min-width: 1025px) {
-  .single-blog-top-img {
+  .page-header-img {
     height: 304px;
   }
 }
@@ -34,12 +35,12 @@
   padding: 20px 45px 0;
 }
 
+/* タブレット以上 */
 @media screen and (min-width: 600px) {
   .single-blog-cont-wrap {
     padding: 60px 20% 0;
   }
 }
-/* 余白(wrapperの外側)  20% */
 
 /*------- タイトル・ライター -----------*/
 .single-blog-writer-wrap {
@@ -47,40 +48,27 @@
   margin-bottom: 37px;
 }
 
-.icon {
+.icon,.icon-img {
   width: 35px;
   height: 35px;
   border-radius: 50%;
-  margin: 15px 10px 0;
 }
 
-.icon-img {
-  width: 35px;
-  height: 35px;
-  border-radius: 50%;
+.icon {
+  margin: 15px 10px 0;
 }
 
 .writer-text {
   margin: 10px 0;
 }
 
-.day {
-  line-height: 1.57;
-  font-size: 14px;
-}
-.writer-name {
+.day,.writer-name {
   font-size: 14px;
   line-height: 1.57;
 }
 
 @media screen and (min-width: 1025px) {
-  .icon {
-    width: 70px;
-    height: 70px;
-    /* margin: 15px 10px 0; */
-  }
-
-  .icon-img {
+  .icon,.icon-img {
     width: 70px;
     height: 70px;
   }
@@ -89,13 +77,8 @@
     margin: 15px 0;
   }
 
-  .day {
-    /* line-height: 1.57; */
+  .day,.writer-name {
     font-size: 20px;
-  }
-  .writer-name {
-    font-size: 20px;
-    /* line-height: 1.57; */
   }
 }
 
@@ -107,38 +90,38 @@
 }
 
 .cont-tag {
-  text-align: right;
   margin: 40px 0;
+  text-align: right;
 }
 
-.cont-tag-p {
-  font-weight: normal;
-  margin-bottom: 10px;
+.cont-tag-txt {
   display: block;
+  margin-bottom: 10px;
+  font-weight: normal;
 }
 
 /* オレンジボタン */
 .btn-orange {
-  font-size: 14px;
   width: 100%;
-  padding: 10px;
   margin-bottom: 40px;
+  padding: 10px;
+  font-size: 14px;
 }
 
-/* 共有 */
+/*---- いいね・sns ----*/
 .share {
   display: flex;
   padding: 20px 0;
 }
 
 .good {
-  font-size: 12px;
+  width: 80px;
+  height: 25px;
   border: 1px solid rgb(32, 32, 32);
   border-radius: 5px;
   /* color: rgb(238, 63, 92); */
   color: gray;
-  width: 80px;
-  height: 25px;
+  font-size: 12px;
   text-align: center;
 }
 
@@ -149,11 +132,12 @@
   margin-left: 15px;
 }
 
+/* タブレット版 */
 @media screen and (min-width: 600px) {
 .good{
-  font-size: 15px;
   width: 150px;
   height: 35px;
+  font-size: 15px;
 }
 
 .twi,
@@ -163,7 +147,7 @@
 }
 }
 
-
+/* pc版 */
 @media screen and (min-width: 1025px) {
   .cont-img {
     margin: 50px 0;
@@ -173,31 +157,32 @@
     margin: 100px 0 60px;
   }
 
-  .cont-tag-p {
-    font-size: 18px;
+  .cont-tag-txt {
     margin-bottom: 20px;
+    font-size: 18px;
   }
 
+  /*--- オレンジボタン ---*/
   .shop-detail-btn {
     text-align: center;
   }
 
-  /* オレンジボタン */
   .btn-orange {
-    font-size: 21px;
     width: 350px;
     height: 55px;
     margin-bottom: 60px;
+    font-size: 21px;
   }
-  /* 共有 */
+
+  /*---- いいね・sns -----*/
   .share {
     padding-top: 0;
   }
 
   .good {
-    font-size: 20px;
     width: 203px;
     height: 47px;
+    font-size: 20px;
   }
 
   .twi,
@@ -222,40 +207,45 @@
 }
 
 .recom-title {
-  text-align: center;
   margin-bottom: 40px;
+  text-align: center;
 }
 
 .recom-title-p {
   font-weight: bold;
 }
+
 .recom-article {
-  margin-bottom: 20px;
   width: 100%;
+  margin-bottom: 20px;
 }
+
 .recom-article-img {
   position: relative;
   margin-bottom: 5px;
 }
 
+/* アイキャッチ（画像についてるタグ） */
 .recom-eye {
-  font-size: 10px;
-  padding: 5px 10px;
-  background-color: #779a34;
-  color: rgb(253, 253, 253);
   display: inline-block;
   position: absolute;
   top: 0;
   left: 0;
+  padding: 5px 10px;
+  background-color: #779a34;
+  color: rgb(253, 253, 253);
+  font-size: 10px;
 }
 
 .recom-good {
-  color: rgb(238, 63, 92);
-  font-size: 30px;
   position: absolute;
-  bottom: 5px;
   right: 5px;
+  bottom: 5px;
+  color: var(--white-color);
+  /* color: rgb(238, 63, 92); */
+  font-size: 30px;
 }
+
 .recom-article-title {
   margin-bottom: 3px;
 }
@@ -263,17 +253,15 @@
   font-size: 12px;
 }
 
+/* タブレット版 */
 @media screen and (min-width: 600px) {
   .recom-wrap {
     padding: 110px 20%;
   }
 }
 
+/* pc版 */
 @media screen and (min-width: 1025px) {
-  .recom-wrap {
-    padding: 110px 20%;
-  }
-
   .recom-title {
     margin-bottom: 100px;
   }
@@ -282,6 +270,7 @@
     width: 49%;
     margin-bottom: 40px;
   }
+
   .recom-article-last {
     width: 100%;
   }
@@ -289,6 +278,10 @@
   .recom-eye {
     font-size: 25px;
   }
+
+  .recom-good {
+  font-size: 50px;
+}
 
   .recom-article-txt {
     font-size: 1em;
