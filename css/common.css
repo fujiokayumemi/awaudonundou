@@ -67,13 +67,14 @@ p {
 /* -------ボタン-------- */
 
 .btn-orange {
+  text-align: center;
   background-color: var(--btn-color);
   color: var(--white-color);
   border-radius: 5px;
-  text-align: center;
 }
 
 .btn-blue {
+  text-align: center;
   background-color: var(--main-color);
   color: var(--white-color);
 }
@@ -102,7 +103,6 @@ p {
   border-top: 2px solid;
   border-right: 2px solid;
   transform: rotate(45deg);
-  /* color: darkgray; */
   margin-right: 4px;
   width: 10px;
   height: 10px;
@@ -110,12 +110,36 @@ p {
   vertical-align: middle;
 }
 
-@media screen and (min-width: 1025px) /* パンくずpc用 */
-{
+/* -------パンくずpc用 ---------*/
+
+
+@media screen and (min-width: 1025px){
+
   .pkz {
     height: 40px;
     font-size: 18px;
     padding:0 20%;
   }
 
+}
+
+
+/* ---------------------------
+--------下層ページヘッダー-------
+----------------------------- */
+
+.page-header-img {
+  width: 100%;
+  height: 113px;
+}
+
+/* --------下層ヘッダーpc用---------- */
+
+@media screen and (min-width: 1025px) {
+
+  .page-header-img {
+    width: 100%;
+    height: 304px;
+  }
+  
 }
