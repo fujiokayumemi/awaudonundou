@@ -25,6 +25,17 @@
   color: var(--white-color);
 }
 
+/* お気に入り記事一覧のみ使用 */
+.page-header-txt-wrap-favorite {
+  width: auto;
+  display: inline-block;
+}
+
+/* お気に入り記事一覧のみ使用 */
+.favorite-catchcopy {
+  text-align: left;
+}
+
 .tag-wrap {
   display: flex;
 }
@@ -41,6 +52,12 @@
     width: 60%;
   }
 
+  /* お気に入り記事一覧のみ使用 */
+  .page-header-txt-wrap-favorite {
+    width: auto;
+    display: inline-block;
+  }
+
   .tag {
     margin-right: 35px;
     font-size: 22px;
@@ -53,6 +70,11 @@
 -------------------- */
 .archive-wrap {
   padding: 40px 45px 48px;
+}
+
+/* お気に入り記事一覧のみ使用 */
+.favorite-title {
+  margin-bottom: 40px;
 }
 
 .archive-list {
@@ -83,16 +105,16 @@
   font-size: 10px;
 }
 
-.naruto{
-background-color: var(--naru-color);
+.naruto {
+  background-color: var(--naru-color);
 }
 
-.tarai{
-background-color: var(--tarai-color);
+.tarai {
+  background-color: var(--tarai-color);
 }
 
-.honkaku{
-background-color: var(--honkaku-color);
+.honkaku {
+  background-color: var(--honkaku-color);
 }
 
 .article-good {
@@ -103,6 +125,10 @@ background-color: var(--honkaku-color);
   /* color: rgb(238, 63, 92); */
   font-size: 35px;
   /* box-shadow: 0 0 10px rgba(0,0,0,0.5); */
+}
+
+.article-link {
+  display: inline-block;
 }
 
 .article-title {
@@ -184,8 +210,8 @@ background-color: var(--honkaku-color);
 
 @media screen and (min-width: 1025px) {
   .pagenation-wrap {
-  margin-top: 100px;
-}
+    margin-top: 100px;
+  }
   .pagenation-number {
     padding: 10px 15px;
     border: 2px solid;
@@ -206,6 +232,30 @@ background-color: var(--honkaku-color);
   }
 
   .pagenation:after {
-    margin-left: 50px;
+    margin: 0 0 0 50px;
+  }
+}
+
+/*--------------------
+
+お気に入り一覧のみ使用
+
+----------------------------*/
+.favorite-recom-wrap {
+  padding: 40px 45px 48px;
+}
+
+.favorite-recom-title {
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.favorite-recom-title-p {
+  font-weight: bold;
+}
+
+@media screen and (min-width: 600px) {
+  .favorite-recom-wrap {
+    padding: 50px 20% 150px;
   }
 }
