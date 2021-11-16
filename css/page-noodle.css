@@ -1,31 +1,150 @@
 @charset "utf-8";
 
-.noodle-top-img {
-  height: 248px;
+.noodle-intro {
+  padding: 0 45px;
+  font-size: 18px;
+  /* font-weight: 700; */
+}
+.bold {
+  font-weight: 700;
+  padding-top: 40px;
+}
+.bold:nth-last-of-type(1) {
+  padding-bottom: 60px;
+}
+.bold-2 {
+  font-size: 16px;
+  font-weight: 700;
+  text-align: left;
+  display: inline-block;
+  margin: 0 auto;
+  padding: 50px 45px 20px;
 }
 
-/* ----- はしやすめ ----- */
+.h3-font {
+  color: var(--main-color);
+  text-align: center;
+  font-size: 18px;
+  padding: 40px 0 20px;
+}
+
+/*-------------------------------------*/
+/* ----------トップイメージ -----------*/
+/*-------------------------------------*/
+.noodle-top-img-wrap {
+  height: 248px;
+}
+.noodle-top-img {
+  height: 100%;
+}
+
+/*---------------------------------------*/
+/*----------- noodle-intro --------------*/
+/*--(徳島の麺類事情～うれしいです。まで)--*/
+/*--------------------------------------*/
+
+/*----- タイトル -----*/
+.noodle-intro .h2-font {
+  text-align: center;
+  padding: 35px 0 30px;
+  font-feature-settings: "palt";
+  letter-spacing: 0.1em;
+}
+.noodle-intro .line-bg {
+  background: linear-gradient(transparent 70%, rgb(243, 158, 101) 0%);
+}
+
+/*----- 画像 -----*/
+.noodle-intro .noodle-tokushima-img-wrap {
+  height: 200px;
+}
+.noodle-tokushima-img {
+  height: 100%;
+  mask-image: url(../img/tokushima_mask_sp.png);
+}
+
+/*----- 本文 -----*/
+.noodle-intro .bold {
+  color: #0f447c;
+}
+
+/*-------------------------------------*/
+/*----------- noodle-about ------------*/
+/*-----(飾り画像～紹介します。まで)-----*/
+/*-------------------------------------*/
+
+.noodle-about .bold {
+  padding: 20px 45px;
+}
+.noodle-about .bold:nth-last-of-type(1) {
+  padding-bottom: 50px;
+}
+
+/*----- 飾り画像 -----*/
+.noodle-deco-img-wrap {
+  height: 307px;
+  padding: 20px 0;
+}
+.noodle-deco-img {
+  height: 100%;
+}
+
+/*---------------------------------*/
+/*--------- なるちゅる説明 ----------*/
+/*---------------------------------*/
+.noodle-naruchuru {
+  text-align: center;
+}
+.noodle-naruchuru-wrap {
+  padding: 0 45px;
+  text-align: left;
+  background: url(../img/IMG_1304.jpg);
+  background-size: cover;
+  /* ↓ 同じく背景画像の透過風加工 */
+  background-color: rgba(255, 255, 255, 0.8);
+  background-blend-mode: lighten;
+}
+
+/*---------------------------------*/
+/*----------- たらい説明 ----------*/
+/*---------------------------------*/
+.noodle-tarai-wrap {
+  padding: 0 45px;
+  text-align: left;
+  background: url(../img/IMG_1304.jpg);
+  background-size: cover;
+  /* ↓ 背景画像の透過風加工です、正規の画像に差し替え次第削除 */
+  background-color: rgba(255, 255, 255, 0.8);
+  background-blend-mode: lighten;
+}
+
+/*---------------------------------*/
+/* ---------- はしやすめ --------- */
+/*---------------------------------*/
 .noodle-kind {
   width: 100%;
-  margin: 1.5em 0;
+  padding: 50px 0 60px;
   overflow: hidden;
   background-color: var(--main-color);
 }
-
-.noodle-kind .faceicon {
+.noodle-kind .h3-font {
+  color: var(--white-color);
+  transform: translateY(-20px);
+}
+.noodle-kind .noodle-faceicon {
   float: left;
-  margin-right: -90px;
-  width: 80px;
+  height: 60px;
+  width: 60px;
+  /* border-radius: 50%; */
 }
 
-.noodle-kind .faceicon img {
+.noodle-kind .noodle-faceicon img {
   width: 100%;
-  height: auto;
-  border: solid 3px var(--white-color);
+  height: 100%;
   border-radius: 50%;
 }
 
-.noodle-kind .chatting {
+.noodle-kind .noodle-chatting {
   width: 100%;
 }
 
