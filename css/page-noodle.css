@@ -1,39 +1,101 @@
 @charset "utf-8";
 
-.noodle-intro {
-  padding: 0 45px;
-  font-size: 18px;
-  /* font-weight: 700; */
-}
+/*----- p(本文) -----*/
 .bold {
   font-weight: 700;
   padding-top: 40px;
 }
+@media screen and (min-width: 1025px) {
+  .bold {
+    font-size: 20px;
+    padding-top: 40px;
+  }
+}
+
 .bold:nth-last-of-type(1) {
   padding-bottom: 60px;
 }
+@media screen and (min-width: 1025px) {
+  .bold:nth-last-of-type(1) {
+    padding-bottom: 130px;
+  }
+}
+
+/*----- センタライズのp(なるちゅる、たらい内) -----*/
 .bold-2 {
   font-size: 16px;
   font-weight: 700;
   text-align: left;
   display: inline-block;
   margin: 0 auto;
-  padding: 50px 45px 20px;
+  padding: 60px 42px 10px 50px;
+  font-feature-settings: "palt";
+  letter-spacing: 0.15em;
+}
+@media screen and (min-width: 1025px) {
+  .bold-2 {
+    font-size: 20px;
+  }
+}
+@media screen and (min-width: 1025px) {
+  .bold-2 br {
+    display: none;
+  }
 }
 
 .h3-font {
   color: var(--main-color);
   text-align: center;
   font-size: 18px;
-  padding: 40px 0 20px;
+  padding: 40px 0 10px;
 }
+@media screen and (min-width: 1025px) {
+  .h3-font {
+    font-size: 30px;
+    padding: 100px 0;
+  }
+}
+
+/*----- ボタン -----*/
+.btn-blue {
+  border-radius: 20px;
+  padding: 9px 15px;
+  margin: 10px 0 75px;
+}
+@media screen and (min-width: 1025px) {
+  .btn-blue {
+    padding: 15px 45px;
+  }
+}
+
+/*----- 矢印 -----*/
+.noodle-arrow-img-wrap {
+  width: 15px;
+  height: 45px;
+  margin: 40px auto;
+}
+.noodle-arrow-img {
+  width: 100%;
+}
+/* @media screen and (min-width: 1025px) {
+  .noodle-arrow-img-wrap {
+    width: 20px;
+  }
+} */
 
 /*-------------------------------------*/
 /* ----------トップイメージ -----------*/
 /*-------------------------------------*/
+
 .noodle-top-img-wrap {
   height: 248px;
 }
+@media screen and (min-width: 1025px) {
+  .noodle-top-img-wrap {
+    height: 450px;
+  }
+}
+
 .noodle-top-img {
   height: 100%;
 }
@@ -43,6 +105,22 @@
 /*--(徳島の麺類事情～うれしいです。まで)--*/
 /*--------------------------------------*/
 
+.noodle-intro {
+  padding: 0 45px;
+  font-size: 18px;
+  /* font-weight: 700; */
+}
+@media screen and (min-width: 600px) {
+  .noodle-intro {
+    padding: 0 20%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .noodle-intro-wrap {
+    display: flex;
+  }
+}
+
 /*----- タイトル -----*/
 .noodle-intro .h2-font {
   text-align: center;
@@ -50,17 +128,33 @@
   font-feature-settings: "palt";
   letter-spacing: 0.1em;
 }
+@media screen and (min-width: 1025px) {
+  .noodle-intro .h2-font {
+    padding: 50px 0 30px;
+  }
+}
 .noodle-intro .line-bg {
   background: linear-gradient(transparent 70%, rgb(243, 158, 101) 0%);
 }
 
-/*----- 画像 -----*/
-.noodle-intro .noodle-tokushima-img-wrap {
-  height: 200px;
+/*----- 徳島きりぬき画像 -----*/
+.noodle-tokushima-img-wrap {
+  min-height: 200px;
 }
+@media screen and (min-width: 1025px) {
+  .noodle-tokushima-img-wrap {
+    height: 320px;
+    margin: 110px 40px 10px;
+  }
+}
+
 .noodle-tokushima-img {
   height: 100%;
-  mask-image: url(../img/tokushima_mask_sp.png);
+}
+@media screen and (min-width: 1025px) {
+  .noodle-tokushima-img {
+    height: auto;
+  }
 }
 
 /*----- 本文 -----*/
@@ -79,6 +173,19 @@
 .noodle-about .bold:nth-last-of-type(1) {
   padding-bottom: 50px;
 }
+@media screen and (min-width: 600px) {
+  .noodle-about .bold {
+    padding: 20px 20%;
+  }
+  .noodle-about .bold:nth-last-of-type(1) {
+    padding-bottom: 120px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .noodle-about .bold {
+    text-align: center;
+  }
+}
 
 /*----- 飾り画像 -----*/
 .noodle-deco-img-wrap {
@@ -88,7 +195,11 @@
 .noodle-deco-img {
   height: 100%;
 }
-
+@media screen and (min-width: 600px) {
+  .noodle-deco-img-wrap {
+    margin: 0 20%;
+  }
+}
 /*---------------------------------*/
 /*--------- なるちゅる説明 ----------*/
 /*---------------------------------*/
@@ -104,10 +215,18 @@
   background-color: rgba(255, 255, 255, 0.8);
   background-blend-mode: lighten;
 }
+@media screen and (min-width: 600px) {
+  .noodle-naruchuru-wrap {
+    padding: 0 20%;
+  }
+}
 
 /*---------------------------------*/
 /*----------- たらい説明 ----------*/
 /*---------------------------------*/
+.noodle-tarai {
+  text-align: center;
+}
 .noodle-tarai-wrap {
   padding: 0 45px;
   text-align: left;
@@ -117,57 +236,108 @@
   background-color: rgba(255, 255, 255, 0.8);
   background-blend-mode: lighten;
 }
-
+@media screen and (min-width: 600px) {
+  .noodle-tarai-wrap {
+    padding: 0 20%;
+  }
+}
 /*---------------------------------*/
 /* ---------- はしやすめ --------- */
 /*---------------------------------*/
+
 .noodle-kind {
   width: 100%;
-  padding: 50px 0 60px;
+  padding: 40px 0 60px;
   overflow: hidden;
   background-color: var(--main-color);
+  margin: 0 auto;
 }
 .noodle-kind .h3-font {
   color: var(--white-color);
-  transform: translateY(-20px);
-}
-.noodle-kind .noodle-faceicon {
-  float: left;
-  height: 60px;
-  width: 60px;
-  /* border-radius: 50%; */
+  padding: 10px 0 30px;
 }
 
-.noodle-kind .noodle-faceicon img {
+/*吹き出し(バルーン)のアウトライン*/
+.bln {
   width: 100%;
-  height: 100%;
-  border-radius: 50%;
+  margin: 15px auto;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
 }
+/* @media (max-width: 480px) {
+  .bln {
+    padding: 10px;
+  }
+} */
 
-.noodle-kind .noodle-chatting {
-  width: 100%;
-}
-
-.says {
-  display: inline-block;
-  position: relative;
-  margin: 5px 0 0 105px;
-  padding: 17px 13px;
-  border-radius: 12px;
-  background: var(--white-color);
-}
-
-.says:after {
+/* 左右アイコンのイメージサイズと配置 */
+.bln:before {
   content: "";
-  display: inline-block;
-  position: absolute;
-  top: 17px;
-  left: -24px;
-  border: 12px solid transparent;
-  border-right: 12px solid var(--white-color);
+  width: 70px;
+  height: 70px;
+  background: no-repeat left center / contain;
+  /* display: inline-block; */
 }
 
-.says p {
+/* @media (min-width:480px) {
+	.bln:before {
+    width: 90px;
+    height: 90px;
+	}
+} */
+
+/* 左アイコンのイメージ配置 画像100~200pxくらいでok */
+.bln:before {
+  background-image: url(../img/neko.PNG);
+  border-radius: 50%;
+  margin-left: 20px;
+}
+
+/* 吹き出し中の文章アウトライン */
+.says {
+  position: relative;
+  margin: 0 10px 0 25px;
+  max-width: calc(100% - 135px);
+  padding: 0.6rem 1.1rem;
+  border: solid 2px var(--white-color);
+  border-radius: 1.2rem;
+  background-color: var(--white-color);
+}
+/* @media (max-width: 480px) {
+  .says {
+    max-width: calc(100% - 170px);
+    margin: 1rem;
+  }
+} */
+
+/* 吹き出し口 尖ってるところのあしらい */
+.says::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: -16px;
+  margin-top: -8px;
+  border: 8px solid transparent;
+  border-right: 10px solid var(--white-color);
+  z-index: 2;
+}
+.says::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: -21px;
+  margin-top: -9px;
+  border: 9px solid transparent;
+  border-right: 12px solid var(--white-color);
+  z-index: 1;
+}
+
+/*吹き出内の調整用*/
+.says-txt {
   margin: 0;
   padding: 0;
+  font-size: 14px;
 }
