@@ -43,6 +43,7 @@
   }
 }
 
+/*----- 見出し -----*/
 .h3-font {
   padding: 40px 0 10px;
   font-size: 18px;
@@ -77,11 +78,6 @@
 .noodle-arrow-img {
   width: 100%;
 }
-/* @media screen and (min-width: 1025px) {
-  .noodle-arrow-img-wrap {
-    width: 20px;
-  }
-} */
 
 /*-------------------------------------*/
 /* ----------トップイメージ -----------*/
@@ -223,9 +219,9 @@
   .noodle-naruchuru-wrap {
     padding: 0 20%;
   }
-}
-.noodle-naruchuru .bold:nth-last-of-type(1) {
-  padding-bottom: 100px;
+  .noodle-naruchuru .bold:nth-last-of-type(1) {
+    padding-bottom: 100px;
+  }
 }
 
 /*---------------------------------*/
@@ -247,10 +243,11 @@
   .noodle-tarai-wrap {
     padding: 0 20%;
   }
+  .noodle-tarai .bold:nth-last-of-type(1) {
+    padding-bottom: 100px;
+  }
 }
-.noodle-tarai .bold:nth-last-of-type(1) {
-  padding-bottom: 100px;
-}
+
 /*---------------------------------*/
 /* ---------- はしやすめ --------- */
 /*---------------------------------*/
