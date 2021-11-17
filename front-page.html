@@ -9,12 +9,106 @@
     <link rel="stylesheet" href="./css/common.css" />
     <link rel="stylesheet" href="./css/front-page.css" />
     <link rel="stylesheet" href="./css/footer.css" />
+    <link rel="stylesheet" href="./css/header.css">
     <!-- 各ページのCSSファイルを作成しパスを記述してください。 -->
   </head>
 
   <body>
-    <header>
-      <!-- ここにヘッダーが入ります。 共通ファイルとなるので何も書かないでください。-->
+      <!-- -------------------------------------
+      ----------------sp版ヘッダー---------------
+    ----------------------------------------- -->
+<header>
+      <section class="header-sp">
+        <button
+          class="header-fav-btn"
+          type="button"
+          onclick="location.href='#'"
+        >
+          <img src="./img/icon_header_mypage.png" alt="" />
+        </button>
+
+        <div class="header-logo-wrap">
+          <h1>
+            <img
+              class="header-logo-img"
+              src="./img/logo-wh-small.png"
+              alt="阿波うどん運動"
+            />
+          </h1>
+        </div>
+
+        <button id="humbugerarea" class="openbtn">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </section>
+
+      <!-------------- ハンバーガーメニュー中身 --------------->
+
+      <nav id="humbugerIn" class="hamburger-inner-nav humbugerIn">
+        <ul class="nav-sp-ul">
+          <li class="nav-sp-item">
+            <a href="#"> 徳島の麺事情 </a>
+          </li>
+          <li class="nav-sp-item"><a href="#"> お店紹介 </a></li>
+          <li class="nav-sp-item nav-sp-shop"><a href="#"> たらいうどん</a></li>
+          <li class="nav-sp-item nav-sp-shop">
+            <a href="#"> なるちゅるうどん</a>
+          </li>
+          <li class="nav-sp-item nav-sp-shop"><a href="#"> 本格派うどん</a></li>
+          <li class="nav-sp-item"><a href="#"> モデルコース</a></li>
+          <li class="nav-sp-item"><a href="#"> 特集 </a></li>
+        </ul>
+        <span class="snsul-sp-title">SNS</span>
+        <ul class="hamburger-sns-ul">
+          <li class="sp-sns-item">
+            <a href="#">
+              <img src="./img/icon_footer_twi.png" alt="Twitter" />
+            </a>
+          </li>
+          <li class="sp-sns-item">
+            <a href="#">
+              <img src="./img/icon_footer_pint.png" alt="Pintarest" />
+            </a>
+          </li>
+          <li class="sp-sns-item">
+            <a href="#">
+              <img src="./img/icon_footer_insta.png" alt="instagram" />
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- -------------------------------------
+      ----------------pc版ヘッダー---------------
+    ----------------------------------------- -->
+
+      <section class="header-pc">
+        <div class="header-logo-wrap">
+          <a href="#">
+            <img src="./img/logo-wh-small.png" alt="阿波うどん運動" />
+          </a>
+        </div>
+
+        <nav class="header-nav-pc">
+          <ul class="nav-pc-ul">
+            <li class="nav-pc-item">
+              <a href="#"> 徳島の麺事情 </a>
+            </li>
+            <li class="nav-pc-item"><a href="#"> たらいうどん </a></li>
+            <li class="nav-pc-item"><a href="#"> なるちゅるうどん </a></li>
+            <li class="nav-pc-item"><a href="#"> 本格派うどん </a></li>
+            <li class="nav-pc-item"><a href="#"> モデルコース </a></li>
+            <li class="nav-pc-item"><a href="#"> 特集 </a></li>
+            <li class="header-fav-btn">
+              <a href="#">
+                <img src="./img/icon_header_mypage.png" alt="" />
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </section>
     </header>
 
     <!-- ---------------------------------------------
@@ -50,8 +144,12 @@
           徳島にはご当地うどんが２つもあるのです。<br />
           徳島に来て、これを食べにゃソンソン！
         </p>
-        <button class="btn-txt btn-blue home-intro-btn">
-          <a href="#">徳島の麺事情</a>
+        <button
+          class="home-intro-btn btn-blue"
+          type="button"
+          onclick="location.href='#'"
+        >
+          徳島の麺事情
         </button>
       </section>
 
@@ -71,9 +169,7 @@
                 みんなで囲む<br />
                 阿波の伝統料理
               </p>
-              <button class="home-slide-btn">
-                <h3 class="home-slide-title">たらいうどん</h3>
-              </button>
+              <button class="home-slide-btn">たらいうどん</button>
             </div>
             <a class="home-slide-link" href="#"></a>
           </li>
@@ -85,9 +181,7 @@
                 たまらない！<br />
                 鳴門の愛され個性派うどん
               </p>
-              <button class="home-slide-btn">
-                <h3 class="home-slide-title">なるちゅるうどん</h3>
-              </button>
+              <button class="home-slide-btn">なるちゅるうどん</button>
             </div>
             <a class="home-slide-link" href="#"></a>
           </li>
@@ -98,9 +192,7 @@
                 うどん激戦区<br />
                 徳島の職人こだわりザ・うどん
               </p>
-              <button class="home-slide-btn">
-                <h3 class="home-slide-title">本格派うどん</h3>
-              </button>
+              <button class="home-slide-btn">本格派うどん</button>
             </div>
             <a class="home-slide-link" href="#"></a>
           </li>
@@ -112,23 +204,26 @@
 ---------------------------------------------->
 
       <section class="home-section home-access accordion-area">
-        <button class="btn-access btn-orange">
-          <h2 class="h2-font home-access-title">県外からのアクセス</h2>
-        </button>
+        <h2 class="h2-font home-access-title">
+          <button class="btn-access btn-orange">
+            <span class="home-access-title"> 県外からのアクセス </span>
+          </button>
+        </h2>
 
         <!-- ------------------------------------------
 ------------県外からのアクセス中身-----------------
 -------------------------------------B------>
 
         <div class="home-access-wrap box">
-          <div class="home-map-img"><img src="" alt="地図" /></div>
+          <div class="home-map-wrap">
+            <img src="./img/img_front_access.jpg" alt="地図" />
+          </div>
           <h3 class="access-subtitle">各駅から徳島駅まで</h3>
 
           <h4 class="traffic">自転車</h4>
           <dl>
             <dt>岡山駅</dt>
             <dd>長尾街道経由6時間</dd>
-            <br />
             <dt>高松駅</dt>
             <dd>国道11号経由3.5時間</dd>
           </dl>
@@ -136,13 +231,10 @@
           <dl>
             <dt>岡山駅</dt>
             <dd>瀬戸中央自動車道&nbsp;と&nbsp;高松自動車道2時間</dd>
-            <br />
             <dt>高松駅</dt>
             <dd>高松自動車道1時間</dd>
-            <br />
             <dt>大阪駅</dt>
             <dd>神戸淡路鳴門自動車道経由2時間</dd>
-            <br />
             <dt>舞子駅</dt>
             <dd>神戸淡路鳴門自動車道経由1.5時間</dd>
           </dl>
@@ -150,13 +242,10 @@
           <dl>
             <dt>岡山駅</dt>
             <dd>JR瀬戸大橋線・JRうずしお経由2時間</dd>
-            <br />
             <dt>高松駅</dt>
             <dd>JRうずしお経由1時間</dd>
-            <br />
             <dt>大阪駅</dt>
             <dd>東海道山陽本線、神戸空港線経由2.5時間</dd>
-            <br />
             <dt>舞子駅</dt>
             <dd>神戸空港線経由1.5時間</dd>
           </dl>
@@ -226,12 +315,7 @@
       </section>
     </main>
 
-    <!-- ----------------------------------------------
--------以上に各ページのマークアップをお願いします。-------
---------------------------------------------------->
-
-  <body>
-    <footer class="footer">
+        <footer class="footer">
       <div class="footer-flex-pc">
         <div class="footer-logo">
           <img src="./img/logo-wh-small.png" alt="" />
@@ -239,31 +323,48 @@
         <div class="footer-navsns-wrap">
           <ul class="footer-nav">
             <li class="footer-nav-item"><a href="#">徳島の麺類事情</a></li>
-            <li class="footer-nav-item"><a href="#">お店紹介</li>
-            <ul class="footer-nav-shop">
-              <li class="nav-item-shop"><a href="#">なるちゅるうどん</a></li>
-              <li class="nav-item-shop"><a href="#">たらいうどん</a></li>
-              <li class="nav-item-shop"><a href="#">本格派うどん</a></li>
-            </ul>
+            <li class="footer-nav-item">
+              お店紹介
+              <ul class="footer-nav-shop">
+                <li class="nav-item-shop"><a href="#">なるちゅるうどん</a></li>
+                <li class="nav-item-shop"><a href="#">たらいうどん</a></li>
+                <li class="nav-item-shop"><a href="#">本格派うどん</a></li>
+              </ul>
+            </li>
 
             <li class="footer-nav-item"><a href="#">モデルコース</a></li>
             <li class="footer-nav-item"><a href="#">特集</a></li>
             <li class="footer-nav-item"><a href="#">わたしたちについて</a></li>
-            <li class="footer-nav-item"><a href="#">プライバシーポリシー</a></li>
+            <li class="footer-nav-item">
+              <a href="#">プライバシーポリシー</a>
+            </li>
           </ul>
 
           <ul class="footer-sns">
-            <li class="footer-sns-item"><a href="https://twitter.com/awa_udon">
-              <img src="./img/icon_footer_twi.png" alt="twitter" /></a>
+            <li class="footer-sns-item">
+              <a href="https://twitter.com/awa_udon">
+                <img src="./img/icon_footer_twi.png" alt="twitter"
+              /></a>
             </li>
-            <li class="footer-sns-item"><a href="https://www.pinterest.jp/awaudonundou/?invite_code=f63dc900a4e94ee1be27475419d28eb6&sender=1096767452911558138">
-              <img src="./img/icon_footer_pint.png" alt="pintarest" /></a>
+            <li class="footer-sns-item">
+              <a
+                href="https://www.pinterest.jp/awaudonundou/?invite_code=f63dc900a4e94ee1be27475419d28eb6&sender=1096767452911558138"
+              >
+                <img src="./img/icon_footer_pint.png" alt="pintarest"
+              /></a>
             </li>
-            <li class="footer-sns-item"><a href="https://instagram.com/awa_udon?utm_medium=copy_link">
-              <img src="./img/icon_footer_insta.png" alt="instagram" /></a>
+            <li class="footer-sns-item">
+              <a href="https://instagram.com/awa_udon?utm_medium=copy_link">
+                <img src="./img/icon_footer_insta.png" alt="instagram"
+              /></a>
             </li>
           </ul>
         </div>
+
+        <!-- ------------------------------------------
+        ----------------Twitter埋め込み-----------------
+      ---------------------------------------------- -->
+
         <div class="footer-twi-window">
           <a
             class="twitter-timeline"
@@ -283,12 +384,169 @@
       <div class="copyright-wrap">
         <small class="copyright">copyright</small>
       </div>
+
+      <!-- ---------------------------------------------
+      --------------------検索フォーム-------------------
+    -------------------------------------------------- -->
+
+      <div id="searchForm-js" class="searchForm-js">
+        <div class="search-form-tab">店舗検索</div>
+
+        <div class="search-form">
+          <form id="entryForm" action="#" method="post">
+            <!-- --------------------------------------------
+  -------------スマホタブレットテーブル-------------
+----------------------------------------------- -->
+            <table class="search-form-sp">
+              <tr class="footer-select-tr">
+                <th class="footer-select-th">エリア</th>
+                <td class="footer-select-td">
+                  <select name="area">
+                    <option value="" selected>エリアを選択　　　　　</option>
+                    <option value="naruto">鳴門市</option>
+                    <option value="awa">阿波市</option>
+                    <option value="tokushima">徳島市周辺</option>
+                  </select>
+                </td>
+              </tr>
+              <tr class="footer-select-tr">
+                <th class="footer-select-th">種　類</th>
+                <td class="footer-select-td">
+                  <select name="udon">
+                    <option value="" selected>うどんの種類を選択　　</option>
+                    <option value="naru">なるちゅるうどん</option>
+                    <option value="tarai">たらいうどん</option>
+                    <option value="honkaku">本格派うどん</option>
+                  </select>
+                </td>
+              </tr>
+            </table>
+
+            <!-- ----------------------------------------------
+  ----------------------pcテーブル-------------------
+--------------------------------------------------- -->
+
+            <div class="form-pc-flex">
+              <table class="search-form-pc">
+                <tr>
+                  <th class="footer-select-th">エリア</th>
+                  <td class="footer-select-td">
+                    <select name="area">
+                      <option value="" selected>エリアを選択　　　　　</option>
+                      <option value="naruto">鳴門市</option>
+                      <option value="awa">阿波市</option>
+                      <option value="tokushima">徳島市周辺</option>
+                    </select>
+                  </td>
+                  <th class="footer-select-th">種　類</th>
+                  <td class="footer-select-td">
+                    <select name="udon">
+                      <option value="" selected>うどんの種類を選択　　</option>
+                      <option value="naru">なるちゅるうどん</option>
+                      <option value="tarai">たらいうどん</option>
+                      <option value="honkaku">本格派うどん</option>
+                    </select>
+                  </td>
+                </tr>
+              </table>
+
+              <!-- ------------テーブル分岐終わり--------------- -->
+
+              <ul class="search-form-ul">
+                <li class="search-form-tag">
+                  <label>
+                    <input
+                      type="checkbox"
+                      name="tag"
+                      value="テキスト"
+                    />テキスト
+                  </label>
+                </li>
+                <li class="search-form-tag">
+                  <label>
+                    <input
+                      type="checkbox"
+                      name="tag"
+                      value="テキスト"
+                    />テキスト
+                  </label>
+                </li>
+                <li class="search-form-tag">
+                  <label>
+                    <input
+                      type="checkbox"
+                      name="tag"
+                      value="テキスト"
+                    />テキスト
+                  </label>
+                </li>
+                <li class="search-form-tag">
+                  <label>
+                    <input
+                      type="checkbox"
+                      name="tag"
+                      value="テキスト"
+                    />テキスト
+                  </label>
+                </li>
+                <li class="search-form-tag">
+                  <label>
+                    <input
+                      type="checkbox"
+                      name="tag"
+                      value="テキスト"
+                    />テキスト
+                  </label>
+                </li>
+                <li class="search-form-tag">
+                  <label>
+                    <input
+                      type="checkbox"
+                      name="tag"
+                      value="テキスト"
+                    />テキスト
+                  </label>
+                </li>
+                <li class="search-form-tag">
+                  <label>
+                    <input
+                      type="checkbox"
+                      name="tag"
+                      value="テキスト"
+                    />テキスト
+                  </label>
+                </li>
+                <li class="search-form-tag">
+                  <label>
+                    <input
+                      type="checkbox"
+                      name="tag"
+                      value="テキスト"
+                    />テキスト
+                  </label>
+                </li>
+                <li class="search-form-tag">
+                  <label>
+                    <input
+                      type="checkbox"
+                      name="tag"
+                      value="テキスト"
+                    />テキスト
+                  </label>
+                </li>
+              </ul>
+            </div>
+
+            <input class="search-form-btn" type="submit" value="検　索" />
+          </form>
+        </div>
+      </div>
+
+      <div id="page-top" class="js-scroll-top">TOPへ</div>
     </footer>
 
-    <div id="page-top" class="js-scroll-top">TOPへ</div>
-
     <!-------------------------------------
-    ----------JQライブラリ読み込み----------
+    -------JQライブラリ読み込み-------
     ---------------------------- ---------->
 
     <script
@@ -298,12 +556,34 @@
     ></script>
 
     <!-------------------------------------
-    -------TOPへもどるボタンJSファイル-------
+    -----ハンバーガーメニュー(ヘッダー) -----
+    ---------------------------- ---------->
+
+    <!-- <script src="./JS/header.js"></script> -->
+
+    <!-------------------------------------
+    -------TOPへもどるボタン（フッター）-----
     ---------------------------- ---------->
 
     <script src="./JS/footer.js"></script>
+  </body>
+</html>
 
-        <!-------------------------------------
+    <!-- ----------------------------------------------
+-------以上に各ページのマークアップをお願いします。-------
+--------------------------------------------------->
+
+    <!-------------------------------------
+    ----------JQライブラリ読み込み----------
+    ---------------------------- ---------->
+
+    <!-- <script
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"
+    ></script> -->
+
+    <!-------------------------------------
     -------アコーディオンメニューJSファイル-------
     ---------------------------- ---------->
 
