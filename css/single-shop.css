@@ -1,27 +1,16 @@
 @charset "utf-8";
 
-/* *******commonメモ******** */
-/* color: var(--txt-color); */
-/* css関数を使用した色定義方法*/
+/* --------------------------------------
+-----------shingle-shop 共通-------------
+---------------------------------------*/
 
-/* font-weightは全体にboldかかっているので
-XDでregularであればnormalをつける */
-/* ************************* */
-
-/* ブレイクポイント */
+/* ---------ブレイクポイント---------- */
 @media screen and (min-width: 600px) {
 }
 @media screen and (min-width: 1025px) {
 }
 
-/* -------------------------------------
------------shingle-shop 共通------------
---------------------------------------*/
-.shop-wrap {
-  /* overflow: hidden; */
-}
-
-/* -------全体の横余白---Padd--- */
+/* --------全体の横余白---Padding----- */
 .shop-container {
   padding: 0 45px;
 }
@@ -31,7 +20,7 @@ XDでregularであればnormalをつける */
   }
 }
 
-/* ----セクションごとの上下余白-Padd--- */
+/* ---セクションごとの上下余白-Padd--- */
 .shop-sec {
   padding-top: 35px;
 }
@@ -46,7 +35,7 @@ XDでregularであればnormalをつける */
   }
 }
 
-/* ---その他下層グループの上下余白-Mar----- */
+/* ---その他下層グループの上下余白-Mar--- */
 .shop-space-bottom {
   margin-bottom: 20px;
 }
@@ -61,7 +50,7 @@ XDでregularであればnormalをつける */
   }
 }
 
-/* ----h2のindexマーク------- */
+/* -----------h2のindexマーク----------- */
 .index-mark1::before {
   display: inline-block;
   content: "";
@@ -92,15 +81,14 @@ XDでregularであればnormalをつける */
   }
 }
 
-/* -----------------------------------
+/* -------------------------------------
 -----------ページ別ヘッダー-------------
 -------------------------------------- */
-/* -----パンくずリストは共通common------ */
-
 .single-shop-top {
   color: var(--white-color);
 }
-/* -----topimg---- */
+
+/* -------------topimg---------------- */
 .shop-top {
   position: relative;
   height: 112px;
@@ -116,11 +104,12 @@ XDでregularであればnormalをつける */
   }
 }
 
-/*-----top内のテキスト---- */
+/*------------top内のテキスト--------- */
 .top-logo {
   padding-top: 29px;
 }
-/*-----タイトル---- */
+
+/*--------------タイトル-------------- */
 .top-title {
   font-size: 20px;
   line-height: 1.6;
@@ -134,7 +123,7 @@ XDでregularであればnormalをつける */
   }
 }
 
-/* ----タグリスト----- */
+/* -------------タグリスト------------ */
 .top-ul {
   display: flex;
   padding-top: 8px;
@@ -164,31 +153,31 @@ XDでregularであればnormalをつける */
 /* -------------------------------------
 -----------------main-------------------
 /* -------------------------------------
------店名、キャッチコピー、紹介文-------
+-------店名、キャッチコピー、紹介文-------
 --------------------------------------- */
-.shop-detail-name {
+.shop-intro-name {
   font-size: 24px;
   line-height: 1.6;
 }
-.shop-detail-catchcopy {
+.shop-intro-catchcopy {
   font-size: 12px;
   line-height: 1.6;
 }
 @media screen and (min-width: 1025px) {
-  .shop-detail-name {
+  .shop-intro-name {
     font-size: 35px;
   }
-  .shop-detail-catchcopy {
+  .shop-intro-catchcopy {
     font-size: 20px;
   }
 }
 
-/* ---------------------------------------
--------------スライダーのためのcss--------
------------------------------------------ */
+/* ----------------------------------------
+-------------スライダーのためのcss-----------
+------------------------------------------- */
 
-/*------------矢印の設定----------*/
-/*-------戻る、次へ矢印の位置-----*/
+/*--------------矢印の設定--------------*/
+/*---------戻る、次へ矢印の位置---------*/
 .slick-prev,
 .slick-next {
   position: absolute; /*絶対配置にする*/
@@ -212,7 +201,7 @@ XDでregularであればnormalをつける */
   transform: rotate(45deg);
 }
 
-/*--------選択するサムネイル画像の設定-------*/
+/*-----選択するサムネイル画像の設定----*/
 .choice-btn-li {
   outline: none;
   width: 25% !important;
@@ -227,7 +216,7 @@ XDでregularであればnormalをつける */
   opacity: 1; /*選択されているものは透過しない*/
 }
 
-/* ----------スライダーレイアウト------------- */
+/* --------スライダーレイアウト-------- */
 .shop-slider-wrap {
   width: 100%;
 }
@@ -240,7 +229,7 @@ XDでregularであればnormalをつける */
   text-decoration: none;
 }
 
-/* -------レスポンシブでフレックス------------ */
+/* ------レスポンシブでフレックス------- */
 @media screen and (min-width: 1025px) {
   .shop-slide-flex {
     display: flex;
@@ -273,10 +262,10 @@ XDでregularであればnormalをつける */
     width: 50% !important;
   }
 }
-/* -----------↑↑↑↑スライダーここまで↑↑↑↑↑----------- */
+/* -----------↑↑↑↑スライダー設定ここまで↑↑↑↑↑----------- */
 
-/* -------------------------------------
------店の特徴メーター領域-----------
+/* --------------------------------------
+----------店の特徴メーター領域-----------
 --------------------------------------- */
 .shop-meter-cont {
   height: 123px;
@@ -291,14 +280,15 @@ XDでregularであればnormalをつける */
   }
 }
 
-/* -------------------------------------
------基本情報、地図--------
+/* --------------------------------------
+-------------基本情報、地図--------------
 --------------------------------------- */
 .shop-basic {
 }
 .shop-basic-flex {
 }
-/* ------基本情報-------- */
+
+/* ------------基本情報---------------- */
 .shop-basic-table {
   font-size: 12px;
   line-height: 1.6;
@@ -311,7 +301,8 @@ XDでregularであればnormalをつける */
     font-size: 22px;
   }
 }
-/* ------基本情報-見出し------- */
+
+/* ----------基本情報-見出し---------- */
 .shop-basic-table th,
 .shop-basic-table td {
   padding: 8px 2.3%;
@@ -322,12 +313,12 @@ XDでregularであればnormalをつける */
   min-width: 77px;
   background-color: var(--sub-color);
 }
-
 .shop-basic-table td {
   min-width: 100px;
   font-weight: normal;
   word-break: break-all;
 }
+
 @media screen and (min-width: 1025px) {
   .shop-basic-table th,
   .shop-basic-table td {
@@ -340,7 +331,7 @@ XDでregularであればnormalをつける */
   }
 }
 
-/* ---------地図----------- */
+/* --------------地図--------------- */
 .shop-map {
   position: relative;
   width: 100%;
@@ -353,6 +344,7 @@ XDでregularであればnormalをつける */
   width: 100%;
   height: 100%;
 }
+
 @media screen and (min-width: 1025px) {
   .shop-map {
     height: 300px;
@@ -360,23 +352,23 @@ XDでregularであればnormalをつける */
 }
 
 /* -------------------------------------
------#食べレポ、snsシェアボタン------
+--------#食べレポ、snsシェアボタン------
 --------------------------------------- */
 .shop-report {
 }
 
-/* -----Instagram埋め込み領域---- */
+/* ---------Instagram埋め込み領域------ */
 .shop-report-cont {
   width: 100%;
   height: 397px;
   margin-left: auto;
   margin-right: auto;
-  /* padding-top: 8px; */
 }
 .shop-report-cont-img {
   width: 100%;
   height: 100%;
 }
+
 @media screen and (min-width: 1025px) {
   .shop-report-cont {
     width: 90%;
@@ -386,7 +378,7 @@ XDでregularであればnormalをつける */
   }
 }
 
-/* -----SNSリンクアイコン---- */
+/* ---------SNSリンクアイコン---------- */
 .sns-btn-wrap {
   display: flex;
   justify-content: space-between;
@@ -410,6 +402,7 @@ XDでregularであればnormalをつける */
   font-size: 12px;
   text-align: center;
 }
+
 @media screen and (min-width: 1025px) {
   .sns-btn-wrap {
     max-width: 500px;
@@ -427,42 +420,41 @@ XDでregularであればnormalをつける */
     font-size: 21px;
   }
 }
-/* -------------------------------------
-----------一覧に戻るボタン--------------
+/* --------------------------------------
+-------------一覧に戻るボタン------------
 --------------------------------------- */
 .shop-link-group {
   text-align: center;
 }
 
-/* -----店舗一覧に戻るボタン---- */
+/* --------店舗一覧に戻るボタン------- */
 .shop-archiveback-btn {
   margin-top: 20px;
   width: 177px;
   height: 49px;
-}
-.shop-archiveback-h2 {
   font-size: 12px;
 }
+
 @media screen and (min-width: 1025px) {
   .shop-archiveback-btn {
     width: 315px;
     height: 60px;
-  }
-  .shop-archiveback-h2 {
     font-size: 20px;
   }
 }
+/* -----------------main終了------------------ */
 
 /* -------------------------------------
-------------おすすめ店舗--------------
+--------------おすすめ店舗--------------
 --------------------------------------- */
 
-/* --------bg-color領域-------- */
+/* -----------bg-color領域------------- */
 .single-shop-recom {
   margin-top: 40px;
   padding-bottom: 40px;
   background-color: var(--sub-color);
 }
+
 @media screen and (min-width: 1025px) {
   .single-shop-recom {
     margin-top: 60px;
@@ -470,7 +462,7 @@ XDでregularであればnormalをつける */
   }
 }
 
-/* -------おすすめインナー------ */
+/* ----------おすすめインナー--------- */
 .shop-recom-innner {
   width: 100%;
 }
@@ -479,6 +471,7 @@ XDでregularであればnormalをつける */
   line-height: 1.57;
   text-align: center;
 }
+
 @media screen and (min-width: 600px) {
   .shop-recom-h3 {
     padding-top: 20px;
@@ -491,7 +484,7 @@ XDでregularであればnormalをつける */
   }
 }
 
-/* -------おすすめflexbox------ */
+/* ----------おすすめflexbox---------- */
 .recom-ul {
   display: flex;
   flex-wrap: wrap;
@@ -516,15 +509,17 @@ XDでregularであればnormalをつける */
     padding-top: 0px;
   }
 }
+
 /* -----------サムネイル------------- */
 .recom-thumb {
   position: relative;
   height: 181px;
 }
-.recom-bg {
+.recom-img {
   z-index: -1;
   height: 100%;
 }
+
 @media screen and (min-width: 600px) {
   .recom-thumb {
     height: 180px;
@@ -545,13 +540,14 @@ XDでregularであればnormalをつける */
   color: rgb(253, 253, 253);
   font-size: 10px;
 }
+
 @media screen and (min-width: 1025px) {
   .recom-eye {
     padding: 10px 20px;
     font-size: 25px;
   }
 }
-/* ------アイキャッチbg色------- */
+/* ----------アイキャッチbg色---------- */
 .eye-honkaku {
   background-color: var(--honkaku-color);
 }
@@ -562,7 +558,7 @@ XDでregularであればnormalをつける */
   background-color: var(--tarai-color);
 }
 
-/* ----------いいねボタン--------- */
+/* ------------いいねボタン------------ */
 .recom-good {
   position: absolute;
   bottom: 6px;
@@ -574,6 +570,7 @@ XDでregularであればnormalをつける */
   height: 38px;
   object-fit: contain;
 }
+
 @media screen and (min-width: 1025px) {
   .recom-good {
     width: 57px;
@@ -585,7 +582,7 @@ XDでregularであればnormalをつける */
   }
 }
 
-/* ---------記事テキスト---------- */
+/* -----------記事テキスト------------ */
 .recom-title {
   font-weight: bold;
 }
@@ -595,6 +592,7 @@ XDでregularであればnormalをつける */
   line-height: 1.6;
   font-weight: normal;
 }
+
 @media screen and (min-width: 600px) {
   .recom-title {
     padding-top: 8px;

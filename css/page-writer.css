@@ -1,27 +1,16 @@
 @charset "utf-8";
 
-/* *******commonメモ******** */
-/* color: var(--txt-color); */
-/* css関数を使用した色定義方法*/
+/* -------------------------------------
+-----------shingle-shop 共通------------
+--------------------------------------*/
 
-/* font-weightは全体にboldかかっているので
-XDでregularであればnormalをつける */
-/* ************************* */
-
-/* ブレイクポイント */
+/* ---------ブレイクポイント--------- */
 @media screen and (min-width: 600px) {
 }
 @media screen and (min-width: 1025px) {
 }
 
-/* -------------------------------------
------------shingle-shop 共通------------
---------------------------------------*/
-.shop-wrap {
-  /* overflow: hidden; */
-}
-
-/* -------全体の横余白---Padd--- */
+/* -------全体の横余白---Padding---- */
 .writer-container {
   padding: 0 45px;
 }
@@ -31,22 +20,22 @@ XDでregularであればnormalをつける */
   }
 }
 
-/* ----セクションごとの上下余白-Padd--- */
-.writer-sec {
+/* --セクションごとの上余白-Padding-- */
+.writer-group {
   padding-top: 35px;
 }
 @media screen and (min-width: 600px) {
-  .writer-sec {
+  .writer-group {
     padding-top: 45px;
   }
 }
 @media screen and (min-width: 1025px) {
-  .writer-sec {
+  .writer-group {
     padding-top: 80px;
   }
 }
 
-/* ---その他下層グループの上下余白-Mar----- */
+/* --その他下層グループの下余白-margin-- */
 .writer-space-bottom {
   margin-bottom: 20px;
 }
@@ -61,15 +50,14 @@ XDでregularであればnormalをつける */
   }
 }
 
-/* -----------------------------------
------------ページ別ヘッダー-------------
+/* ------------------------------------
+-----------ページ別ヘッダー------------
 -------------------------------------- */
-/* -----パンくずリストは共通common------ */
-
 .page-writer-top {
   color: var(--white-color);
 }
-/* -----topimg---- */
+
+/* -------------topimg---------------- */
 .writer-top {
   position: relative;
 }
@@ -79,11 +67,12 @@ XDでregularであればnormalをつける */
   height: 100%;
 }
 
-/*-----top内のテキスト---- */
+/*------------top内のテキスト--------- */
 .top-logo {
   padding-top: 29px;
 }
-/*-----タイトル---- */
+
+/*-------------タイトル---------------- */
 .top-title {
   font-size: 20px;
   line-height: 1.6;
@@ -97,13 +86,13 @@ XDでregularであればnormalをつける */
   }
 }
 
-/* -------------------------------------
------------------main-------------------
-/* -------------------------------------
+/* ---------------------------------------
+------------------main--------------------
+/* ---------------------------------------
 ----------------全体紹介文----------------
 --------------------------------------- */
 @media screen and (min-width: 1025px) {
-  .writer-detail-txt {
+  .writer-intro-txt {
     font-size: 24px;
   }
 }
@@ -117,7 +106,7 @@ XDでregularであればnormalをつける */
   }
 }
 
-/*--------------レスポンシブ改行---------- */
+/*-----------レスポンシブflex---------- */
 .member-ul {
   display: flex;
   flex-wrap: wrap;
@@ -125,11 +114,11 @@ XDでregularであればnormalをつける */
   width: 100%;
 }
 .member-li {
-  width: 100%;
   display: flex;
   justify-content: space-between;
-  padding: 12px 0;
+  width: 100%;
   margin: 0 0;
+  padding: 12px 0;
 }
 @media screen and (min-width: 1025px) {
   .member-li {
@@ -138,7 +127,7 @@ XDでregularであればnormalをつける */
   }
 }
 
-/*---------------アバターアイコン----------- */
+/*------------アバターアイコン--------- */
 .member-avater {
   display: block;
   width: 80px;
@@ -155,7 +144,7 @@ XDでregularであればnormalをつける */
   }
 }
 
-/*-----------------紹介文cont----------------- */
+/*--------------紹介文cont-------------- */
 .member-cont {
   width: calc(100% - 95px);
 }
@@ -165,14 +154,14 @@ XDでregularであればnormalをつける */
   }
 }
 
-/*-----ハンドルネーム---- */
+/*-----------ハンドルネーム------------ */
 @media screen and (min-width: 1025px) {
   .member-name {
     font-size: 35px;
   }
 }
 
-/*-----執筆者情報---- */
+/*--------------執筆者情報------------- */
 .member-txt {
   margin: 10px 0 0 0;
   font-size: 12px;
