@@ -4,6 +4,9 @@
 -------これはfront-page.cssファイルです------
 ------------------------------------- */
 
+/* 11/17 青柳
+いじったところ：左右の余白パディング、徳島の麺事情ボタンの表記、ジャンボトロンレスポンシブ、特集レスポンシブ（突貫なので気に入らなければ直してください） */
+
 /* -------------------------
 -------ページ共通--------
 ---------------------------- */
@@ -22,6 +25,12 @@ h2 {
   padding-right: 45px;
 }
 
+@media screen and (min-width: 600px) {
+  .home-intro {
+    padding: 40px 20% 40px;
+  }
+}
+
 .btn-blue {
   border-radius: 20px;
   padding: 9px 15px;
@@ -35,22 +44,30 @@ h2 {
 
 .section-mv {
   position: relative;
-}
-
-.mv-container {
-  background-color: var(--white-color);
-  opacity: 50%;
-}
-
-.mv {
-  object-fit: cover;
   height: 80vh;
+  background-image: url(../img/mv.JPG);
+  background-size: cover;
 }
 
+/* div */
 .mv-logo {
   position: absolute;
   top: 50%;
-  transform: translateY(-50%);
+  left: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 240px;
+  transform: translate(-50%, -50%);
+}
+
+.mv-logo-img {
+  width: 100%;
+}
+@media screen and (min-width: 600px) {
+  .mv-logo {
+    width: 450px;
+  }
 }
 
 /* -------------------------
@@ -86,7 +103,6 @@ h2 {
 
 .home-intro-btn {
   margin-bottom: 30px;
-  font-weight: normal;
 }
 
 /* -------------------------
@@ -277,6 +293,11 @@ dd {
   background-size: cover;
   color: var(--white-color);
 }
+@media screen and (min-width: 600px) {
+  .home-model {
+    margin: 120px 20%;
+  }
+}
 
 .home-model-txt {
   text-align: left;
@@ -295,11 +316,16 @@ dd {
   background-image: url(../img/bg_front_spe.jpg);
   background-size: contain;
 }
+@media screen and (min-width: 600px) {
+  .home-spe {
+    padding: 5% 10%;
+  }
+}
 
 .home-spe-ul {
   display: flex;
-  height: 285px;
-  margin: 24px 0 28px;
+  height: auto;
+  margin: 24px 0 20px;
   flex-wrap: wrap;
   justify-content: space-between;
   align-content: space-between;
@@ -307,9 +333,22 @@ dd {
 
 .home-spe-item {
   width: 47%;
-  height: 47%;
+  height: auto;
+  padding-top: 15px;
 }
 
 .home-spe-img {
   height: 100%;
+}
+
+@media screen and (min-width: 600px) {
+  .home-spe-ul {
+    flex-wrap: nowrap;
+  }
+  .home-spe-item {
+    padding-right: 5%;
+  }
+  .home-spe-item:nth-last-of-type(1) {
+    padding-right: 0;
+  }
 }
