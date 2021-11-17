@@ -18,34 +18,64 @@
     ----------------------------------------- -->
 
       <section class="header-sp">
-        <div class="header-fav-wrap">
+        <button
+          class="header-fav-btn"
+          type="button"
+          onclick="location.href='#'"
+        >
           <img src="./img/icon_header_mypage.png" alt="" />
-        </div>
+        </button>
+
         <div class="header-logo-wrap">
-          <img
-            class="header-logo-img"
-            src="./img/logo-wh-small.png"
-            alt="阿波うどん運動"
-          />
+          <h1>
+            <img
+              class="header-logo-img"
+              src="./img/logo-wh-small.png"
+              alt="阿波うどん運動"
+            />
+          </h1>
         </div>
 
-        <div class="openbtn">
+        <button id="humbugerarea" class="openbtn">
           <span></span>
           <span></span>
           <span></span>
-        </div>
+        </button>
       </section>
 
-      <nav class="hamburger-inner-nav">
+      <!-------------- ハンバーガーメニュー中身 --------------->
+
+      <nav id="humbugerIn" class="hamburger-inner-nav humbugerIn">
         <ul class="nav-sp-ul">
-          <li class="nav-pc-item">
+          <li class="nav-sp-item">
             <a href="#"> 徳島の麺事情 </a>
           </li>
-          <li class="nav-sp-item"><a href="#"> たらいうどん </a></li>
-          <li class="nav-sp-item"><a href="#"> なるちゅるうどん </a></li>
-          <li class="nav-sp-item"><a href="#"> 本格派うどん </a></li>
-          <li class="nav-sp-item"><a href="#"> モデルコース </a></li>
+          <li class="nav-sp-item"><a href="#"> お店紹介 </a></li>
+          <li class="nav-sp-item nav-sp-shop"><a href="#"> たらいうどん</a></li>
+          <li class="nav-sp-item nav-sp-shop">
+            <a href="#"> なるちゅるうどん</a>
+          </li>
+          <li class="nav-sp-item nav-sp-shop"><a href="#"> 本格派うどん</a></li>
+          <li class="nav-sp-item"><a href="#"> モデルコース</a></li>
           <li class="nav-sp-item"><a href="#"> 特集 </a></li>
+        </ul>
+        <span class="snsul-sp-title">SNS</span>
+        <ul class="hamburger-sns-ul">
+          <li class="sp-sns-item">
+            <a href="#">
+              <img src="./img/icon_footer_twi.png" alt="Twitter" />
+            </a>
+          </li>
+          <li class="sp-sns-item">
+            <a href="#">
+              <img src="./img/icon_footer_pint.png" alt="Pintarest" />
+            </a>
+          </li>
+          <li class="sp-sns-item">
+            <a href="#">
+              <img src="./img/icon_footer_insta.png" alt="instagram" />
+            </a>
+          </li>
         </ul>
       </nav>
 
@@ -70,7 +100,7 @@
             <li class="nav-pc-item"><a href="#"> 本格派うどん </a></li>
             <li class="nav-pc-item"><a href="#"> モデルコース </a></li>
             <li class="nav-pc-item"><a href="#"> 特集 </a></li>
-            <li class="header-fav-wrap">
+            <li class="header-fav-btn">
               <a href="#">
                 <img src="./img/icon_header_mypage.png" alt="" />
               </a>
