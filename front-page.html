@@ -23,13 +23,13 @@
 
     <main>
       <section class="section-mv">
-        <div class="mv-container">
-          <img class="mv" src="./img/mv.JPG" alt="" />
+        <div class="mv-logo">
+          <img
+            class="mv-logo-img"
+            src="./img/logo_maincolor.png"
+            alt="徳島うどん運動"
+          />
         </div>
-
-        <h1 class="mv-logo">
-          <img src="./img/logo_front_mv.png" alt="" />
-        </h1>
       </section>
 
       <!-- ------------------------------------------
@@ -50,8 +50,12 @@
           徳島にはご当地うどんが２つもあるのです。<br />
           徳島に来て、これを食べにゃソンソン！
         </p>
-        <button class="btn-txt btn-blue home-intro-btn">
-          <a href="#">徳島の麺事情</a>
+        <button
+          class="home-intro-btn btn-blue"
+          type="button"
+          onclick="location.href='#'"
+        >
+          徳島の麺事情を知る！
         </button>
       </section>
 
@@ -71,9 +75,7 @@
                 みんなで囲む<br />
                 阿波の伝統料理
               </p>
-              <button class="home-slide-btn">
-                <h3 class="home-slide-title">たらいうどん</h3>
-              </button>
+              <button class="home-slide-btn">たらいうどん</button>
             </div>
             <a class="home-slide-link" href="#"></a>
           </li>
@@ -85,9 +87,7 @@
                 たまらない！<br />
                 鳴門の愛され個性派うどん
               </p>
-              <button class="home-slide-btn">
-                <h3 class="home-slide-title">なるちゅるうどん</h3>
-              </button>
+              <button class="home-slide-btn">なるちゅるうどん</button>
             </div>
             <a class="home-slide-link" href="#"></a>
           </li>
@@ -98,9 +98,7 @@
                 うどん激戦区<br />
                 徳島の職人こだわりザ・うどん
               </p>
-              <button class="home-slide-btn">
-                <h3 class="home-slide-title">本格派うどん</h3>
-              </button>
+              <button class="home-slide-btn">本格派うどん</button>
             </div>
             <a class="home-slide-link" href="#"></a>
           </li>
@@ -112,23 +110,26 @@
 ---------------------------------------------->
 
       <section class="home-section home-access accordion-area">
-        <button class="btn-access btn-orange">
-          <h2 class="h2-font home-access-title">県外からのアクセス</h2>
-        </button>
+        <h2 class="h2-font home-access-title">
+          <button class="btn-access btn-orange">
+            <span class="home-access-title"> 県外からのアクセス </span>
+          </button>
+        </h2>
 
         <!-- ------------------------------------------
 ------------県外からのアクセス中身-----------------
 -------------------------------------B------>
 
         <div class="home-access-wrap box">
-          <div class="home-map-img"><img src="" alt="地図" /></div>
+          <div class="home-map-wrap">
+            <img src="./img/img_front_access.jpg" alt="地図" />
+          </div>
           <h3 class="access-subtitle">各駅から徳島駅まで</h3>
 
           <h4 class="traffic">自転車</h4>
           <dl>
             <dt>岡山駅</dt>
             <dd>長尾街道経由6時間</dd>
-            <br />
             <dt>高松駅</dt>
             <dd>国道11号経由3.5時間</dd>
           </dl>
@@ -136,13 +137,10 @@
           <dl>
             <dt>岡山駅</dt>
             <dd>瀬戸中央自動車道&nbsp;と&nbsp;高松自動車道2時間</dd>
-            <br />
             <dt>高松駅</dt>
             <dd>高松自動車道1時間</dd>
-            <br />
             <dt>大阪駅</dt>
             <dd>神戸淡路鳴門自動車道経由2時間</dd>
-            <br />
             <dt>舞子駅</dt>
             <dd>神戸淡路鳴門自動車道経由1.5時間</dd>
           </dl>
@@ -150,13 +148,10 @@
           <dl>
             <dt>岡山駅</dt>
             <dd>JR瀬戸大橋線・JRうずしお経由2時間</dd>
-            <br />
             <dt>高松駅</dt>
             <dd>JRうずしお経由1時間</dd>
-            <br />
             <dt>大阪駅</dt>
             <dd>東海道山陽本線、神戸空港線経由2.5時間</dd>
-            <br />
             <dt>舞子駅</dt>
             <dd>神戸空港線経由1.5時間</dd>
           </dl>
@@ -192,34 +187,22 @@
         <ul class="home-spe-ul flex">
           <li class="home-spe-item">
             <a href="#"
-              ><img
-                class="home-spe-img"
-                src="./img/thumb_front_spe001.jpg"
-                alt=""
+              ><img class="home-spe-img" src="./img/sappari_sp_x2.jpg" alt=""
             /></a>
           </li>
           <li class="home-spe-item">
             <a href="#"
-              ><img
-                class="home-spe-img"
-                src="./img/thumb_front_spe002.JPG"
-                alt=""
+              ><img class="home-spe-img" src="./img/oomori600.jpg" alt=""
             /></a>
           </li>
           <li class="home-spe-item">
             <a href="#"
-              ><img
-                class="home-spe-img"
-                src="./img/thumb_front_spe003.JPG"
-                alt=""
+              ><img class="home-spe-img" src="./img/koseiha_x2.jpg" alt=""
             /></a>
           </li>
           <li class="home-spe-item">
             <a href="#"
-              ><img
-                class="home-spe-img"
-                src="./img/thumb_front_spe004.JPG"
-                alt=""
+              ><img class="home-spe-img" src="./img/sidemenu600.jpg" alt=""
             /></a>
           </li>
         </ul>
@@ -229,63 +212,6 @@
     <!-- ----------------------------------------------
 -------以上に各ページのマークアップをお願いします。-------
 --------------------------------------------------->
-
-  <body>
-    <footer class="footer">
-      <div class="footer-flex-pc">
-        <div class="footer-logo">
-          <img src="./img/logo-wh-small.png" alt="" />
-        </div>
-        <div class="footer-navsns-wrap">
-          <ul class="footer-nav">
-            <li class="footer-nav-item"><a href="#">徳島の麺類事情</a></li>
-            <li class="footer-nav-item"><a href="#">お店紹介</li>
-            <ul class="footer-nav-shop">
-              <li class="nav-item-shop"><a href="#">なるちゅるうどん</a></li>
-              <li class="nav-item-shop"><a href="#">たらいうどん</a></li>
-              <li class="nav-item-shop"><a href="#">本格派うどん</a></li>
-            </ul>
-
-            <li class="footer-nav-item"><a href="#">モデルコース</a></li>
-            <li class="footer-nav-item"><a href="#">特集</a></li>
-            <li class="footer-nav-item"><a href="#">わたしたちについて</a></li>
-            <li class="footer-nav-item"><a href="#">プライバシーポリシー</a></li>
-          </ul>
-
-          <ul class="footer-sns">
-            <li class="footer-sns-item"><a href="https://twitter.com/awa_udon">
-              <img src="./img/icon_footer_twi.png" alt="twitter" /></a>
-            </li>
-            <li class="footer-sns-item"><a href="https://www.pinterest.jp/awaudonundou/?invite_code=f63dc900a4e94ee1be27475419d28eb6&sender=1096767452911558138">
-              <img src="./img/icon_footer_pint.png" alt="pintarest" /></a>
-            </li>
-            <li class="footer-sns-item"><a href="https://instagram.com/awa_udon?utm_medium=copy_link">
-              <img src="./img/icon_footer_insta.png" alt="instagram" /></a>
-            </li>
-          </ul>
-        </div>
-        <div class="footer-twi-window">
-          <a
-            class="twitter-timeline"
-            data-width="392"
-            data-height="484"
-            href="https://twitter.com/awa_udon?ref_src=twsrc%5Etfw"
-            >Tweets by awa_udon</a
-          >
-          <script
-            async
-            src="https://platform.twitter.com/widgets.js"
-            charset="utf-8"
-          ></script>
-        </div>
-      </div>
-
-      <div class="copyright-wrap">
-        <small class="copyright">copyright</small>
-      </div>
-    </footer>
-
-    <div id="page-top" class="js-scroll-top">TOPへ</div>
 
     <!-------------------------------------
     ----------JQライブラリ読み込み----------
@@ -298,12 +224,6 @@
     ></script>
 
     <!-------------------------------------
-    -------TOPへもどるボタンJSファイル-------
-    ---------------------------- ---------->
-
-    <script src="./JS/footer.js"></script>
-
-        <!-------------------------------------
     -------アコーディオンメニューJSファイル-------
     ---------------------------- ---------->
 
