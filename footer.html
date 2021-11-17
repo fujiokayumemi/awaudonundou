@@ -45,6 +45,11 @@
             </li>
           </ul>
         </div>
+
+        <!-- ------------------------------------------
+        ----------------Twitter埋め込み-----------------
+      ---------------------------------------------- -->
+
         <div class="footer-twi-window">
           <a
             class="twitter-timeline"
@@ -65,11 +70,21 @@
         <small class="copyright">copyright</small>
       </div>
 
+      <!-- ---------------------------------------------
+      --------------------検索フォーム-------------------
+    -------------------------------------------------- -->
+
+    <div class="search-form-tab">店舗検索</div>
+
       <div class="search-form">
         <form id="entryForm" action="#" method="post">
-<table class="search-form-table">
-  <tr>
-    <th>エリア</th>
+
+<!-- --------------------------------------------
+  -------------スマホタブレットテーブル-------------
+----------------------------------------------- -->
+<table class="search-form-sp">
+  <tr class="footer-select-tr">
+    <th class="footer-select-th">エリア</th>
     <td class="footer-select-td">
       <select name="area" id="">
         <option value="" selected>エリアを選択　　　　　</option>
@@ -79,8 +94,8 @@
       </select>
     </td>
   </tr>
-  <tr>
-    <th>種　類</th>
+  <tr class="footer-select-tr">
+    <th class="footer-select-th">種　類</th>
     <td class="footer-select-td">
       <select name="udon" id="">
         <option value="" selected>うどんの種類を選択　　</option>
@@ -89,7 +104,92 @@
 <option value="honkaku">本格派うどん</option>
       </select></td>
   </tr>
-</table>
+
+  </table>
+
+  <!-- ----------------------------------------------
+  ----------------------pcテーブル-------------------
+--------------------------------------------------- -->
+
+<div class="form-pc-flex">
+
+<table class="search-form-pc">
+
+<tr>
+    <th class="footer-select-th">エリア</th>
+    <td class="footer-select-td">
+      <select name="area" id="">
+        <option value="" selected>エリアを選択　　　　　</option>
+<option value="naruto">鳴門市</option>
+<option value="awa">阿波市</option>
+<option value="tokushima">徳島市周辺</option>
+      </select>
+    </td>
+        <th class="footer-select-th">種　類</th>
+    <td class="footer-select-td">
+      <select name="udon" id="">
+        <option value="" selected>うどんの種類を選択　　</option>
+<option value="naru">なるちゅるうどん</option>
+<option value="tarai">たらいうどん</option>
+<option value="honkaku">本格派うどん</option>
+      </select></td>
+
+</tr>
+  </table>
+
+  <!-- ------------テーブル分岐終わり--------------- -->
+
+  <ul class="search-form-ul">
+    <li class="search-form-tag">
+      <label>
+      <input type="checkbox" name="tag" value="テキスト">テキスト
+      </label>
+      </li>
+      <li class="search-form-tag">
+      <label>
+      <input type="checkbox" name="tag" value="テキスト">テキスト
+      </label>
+      </li>
+      <li class="search-form-tag">
+      <label>
+      <input type="checkbox" name="tag" value="テキスト">テキスト
+      </label>
+      </li>
+      <label>
+      <li class="search-form-tag">
+      <input type="checkbox" name="tag" value="テキスト">テキスト
+      </label>
+      </li>
+      <li class="search-form-tag">
+      <label>
+      <input type="checkbox" name="tag" value="テキスト">テキスト
+      </label>
+      </li>
+      <li class="search-form-tag">
+      <label>
+      <input type="checkbox" name="tag" value="テキスト">テキスト
+      </label>
+      </li>
+      <li class="search-form-tag">
+      <label>
+      <input type="checkbox" name="tag" value="テキスト">テキスト
+      </label>
+      </li>
+      <li class="search-form-tag">
+      <label>
+      <input type="checkbox" name="tag" value="テキスト">テキスト
+      </label>
+      </li>
+      <li class="search-form-tag">
+      <label>
+        <input type="checkbox" name="tag" value="テキスト">テキスト
+      </label>
+      </li>
+  </ul>
+
+</div>
+
+  <input class="search-form-btn" type="submit" value="検　索">
 </form>
 </div>
 
@@ -100,7 +200,7 @@
 
 
     <!-------------------------------------
-    -------TOPへもどるボタンJSファイル-------
+    -------JQライブラリ読み込み-------
     ---------------------------- ---------->
 
     <script
@@ -108,6 +208,13 @@
       integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
       crossorigin="anonymous"
     ></script>
+
+    <!-------------------------------------
+    -------ハンバーガーメニュー-------------
+    ---------------------------- ---------->
+
+        <script src="js/5-2-1.js"></script>
+
 
     <!-------------------------------------
     -------TOPへもどるボタンJSファイル-------

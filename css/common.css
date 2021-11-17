@@ -55,14 +55,13 @@ p {
     font-size: 30px;
   }
 
-    p {
+  p {
     font-size: 20px;
     line-height: 1.6;
     letter-spacing: 0.03em;
     font-weight: normal;
   }
 }
-
 
 /* -------ボタン-------- */
 
@@ -85,7 +84,7 @@ p {
   height: 33px;
   font-size: 12px;
   font-weight: normal;
-  color:var(--sub-color);
+  color: var(--sub-color);
   padding: 0 45px;
 }
 .pkz-ul {
@@ -112,21 +111,21 @@ p {
 
 /* -------パンくずpc用 ---------*/
 
-
-@media screen and (min-width: 1025px){
-
+@media screen and (min-width: 1025px) {
   .pkz {
     height: 40px;
     font-size: 18px;
-    padding:0 20%;
+    padding: 0 10%;
   }
-
 }
-
 
 /* ---------------------------
 --------下層ページヘッダー-------
 ----------------------------- */
+
+.page-header {
+  position: relative;
+}
 
 .page-header-img {
   width: 100%;
@@ -135,11 +134,9 @@ p {
 
 /* --------下層ヘッダーpc用---------- */
 
-@media screen and (min-width: 1025px) {
-
+@media screen and (min-width: 600px) {
   .page-header-img {
     width: 100%;
-    height: 304px;
+    height: 200px;
   }
-  
 }
