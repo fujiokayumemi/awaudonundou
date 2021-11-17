@@ -12,8 +12,80 @@
   </head>
 
   <body>
-    <header>
-      <!-- ここにヘッダーが入ります。 共通ファイルとなるので何も書かないでください。-->
+    <header class="header">
+      <!-- -------------------------------------
+      ----------------sp版ヘッダー---------------
+    ----------------------------------------- -->
+
+      <section class="header-sp">
+        <div class="header-fav-wrap">
+          <img src="./img/icon_header_mypage.png" alt="" />
+        </div>
+        <div class="header-logo-wrap">
+          <img
+            class="header-logo-img"
+            src="./img/logo-wh-small.png"
+            alt="阿波うどん運動"
+          />
+        </div>
+
+        <div class="openbtn">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </section>
+
+      <nav class="hamburger-inner-nav">
+        <ul class="nav-sp-ul">
+          <li class="nav-pc-item">
+            <a href="#"> 徳島の麺事情 </a>
+          </li>
+          <li class="nav-sp-item"><a href="#"> たらいうどん </a></li>
+          <li class="nav-sp-item"><a href="#"> なるちゅるうどん </a></li>
+          <li class="nav-sp-item"><a href="#"> 本格派うどん </a></li>
+          <li class="nav-sp-item"><a href="#"> モデルコース </a></li>
+          <li class="nav-sp-item"><a href="#"> 特集 </a></li>
+        </ul>
+      </nav>
+
+      <!-- -------------------------------------
+      ----------------pc版ヘッダー---------------
+    ----------------------------------------- -->
+
+      <section class="header-pc">
+        <div class="header-logo-wrap">
+          <a href="#">
+            <img src="./img/logo-wh-small.png" alt="阿波うどん運動" />
+          </a>
+        </div>
+
+        <nav class="header-nav-pc">
+          <ul class="nav-pc-ul">
+            <li class="nav-pc-item">
+              <a href="#"> 徳島の麺事情 </a>
+            </li>
+            <li class="nav-pc-item"><a href="#"> たらいうどん </a></li>
+            <li class="nav-pc-item"><a href="#"> なるちゅるうどん </a></li>
+            <li class="nav-pc-item"><a href="#"> 本格派うどん </a></li>
+            <li class="nav-pc-item"><a href="#"> モデルコース </a></li>
+            <li class="nav-pc-item"><a href="#"> 特集 </a></li>
+            <li class="header-fav-wrap">
+              <a href="#">
+                <img src="./img/icon_header_mypage.png" alt="" />
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </section>
     </header>
+
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.min.js"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"
+    ></script>
+    <!--自作のJS-->
+    <script src="./JS/header.js"></script>
   </body>
 </html>

@@ -197,20 +197,108 @@
 /* ------------------------
 --------検索フォーム---------
 -------------------------- */
-.search-form {
-  width: 390px;
-  height: 290px;
-  color: var(--pkz-color);
+
+.search-form-tab {
+  width: 100px;
+  height: 30px;
+  border-radius: 10px 10px 0 0;
   background-color: var(--white-color);
+  color: var(--txt-color);
 }
 
-.search-form-table{
-  border-spacing: 10px 20px;
+.search-form {
+  width: 100%;
+  padding: 0 20px;
+  background-color: var(--white-color);
+  color: var(--txt-color);
+}
+
+.search-form-pc {
+  display: none; /* pc版レイアウトを隠す */
+}
+
+.search-form-sp {
   margin: 0 auto;
+  border-spacing: 10px 20px;
 }
 
-.footer-select-td{
+.footer-select-th {
+  padding-right: 30px;
+  font-size: 14px;
+}
+
+.footer-select-td {
   margin-top: 10px;
   outline: 1px solid var(--pkz-color);
   text-align: left;
+}
+
+.search-form-ul {
+  width: 100%;
+  padding-bottom: 30px;
+  padding-left: 30px;
+  text-align: left;
+}
+
+.search-form-tag {
+  display: inline-block;
+  padding: 2px;
+  font-weight: bold;
+}
+
+.search-form-btn {
+  padding: 10px 25px;
+  border-radius: 30px;
+  background-color: var(--main-color);
+  color: var(--white-color);
+  font-weight: bold;
+}
+
+/* -------検索フォームタブレット版----------*/
+
+@media screen and (min-width: 600px) {
+  .footer-select-th {
+    padding-right: 80px;
+    font-size: 16px;
+  }
+
+  .search-form-ul {
+    width: 100%;
+    padding: 0 10px 20px 100px;
+    text-align: left;
+    font-size: 16px;
+  }
+}
+
+.search-form-btn {
+  margin-bottom: 30px;
+}
+
+/* -------検索フォームPC版----------*/
+
+@media screen and (min-width: 1025px) {
+  .search-form-sp {
+    display: none; /* sp版レイアウトを隠す */
+  }
+
+  .form-pc-flex {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px 0 20px;
+  }
+
+  .search-form-pc {
+    display: block;
+  }
+
+  .footer-select-th {
+    padding-right: 5px;
+    padding-left: 15px;
+    font-size: 16px;
+  }
+
+  .search-form-ul {
+    width: 50%;
+    padding: 0;
+  }
 }
