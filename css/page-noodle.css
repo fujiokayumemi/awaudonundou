@@ -2,13 +2,13 @@
 
 /*----- p(本文) -----*/
 .bold {
-  font-weight: 700;
   padding-top: 40px;
+  font-weight: 700;
 }
 @media screen and (min-width: 1025px) {
   .bold {
-    font-size: 20px;
     padding-top: 40px;
+    font-size: 20px;
   }
 }
 
@@ -17,18 +17,18 @@
 }
 @media screen and (min-width: 1025px) {
   .bold:nth-last-of-type(1) {
-    padding-bottom: 130px;
+    margin-bottom: 50px;
   }
 }
 
 /*----- センタライズのp(なるちゅる、たらい内) -----*/
 .bold-2 {
-  font-size: 16px;
-  font-weight: 700;
-  text-align: left;
   display: inline-block;
   margin: 0 auto;
   padding: 60px 42px 10px 50px;
+  font-size: 16px;
+  font-weight: 700;
+  text-align: left;
   font-feature-settings: "palt";
   letter-spacing: 0.15em;
 }
@@ -44,23 +44,23 @@
 }
 
 .h3-font {
+  padding: 40px 0 10px;
+  font-size: 18px;
   color: var(--main-color);
   text-align: center;
-  font-size: 18px;
-  padding: 40px 0 10px;
 }
 @media screen and (min-width: 1025px) {
   .h3-font {
     font-size: 30px;
-    padding: 100px 0;
+    padding: 90px 0;
   }
 }
 
 /*----- ボタン -----*/
 .btn-blue {
-  border-radius: 20px;
   padding: 9px 15px;
   margin: 10px 0 75px;
+  border-radius: 20px;
 }
 @media screen and (min-width: 1025px) {
   .btn-blue {
@@ -115,20 +115,23 @@
     padding: 0 20%;
   }
 }
+/*----- flexboxのための箱 -----*/
 @media screen and (min-width: 1024px) {
   .noodle-intro-wrap {
     display: flex;
+    align-items: center;
+    justify-content: center;
   }
 }
 
 /*----- タイトル -----*/
 .noodle-intro .h2-font {
-  text-align: center;
   padding: 35px 0 30px;
+  text-align: center;
   font-feature-settings: "palt";
   letter-spacing: 0.1em;
 }
-@media screen and (min-width: 1025px) {
+@media screen and (min-width: 1024px) {
   .noodle-intro .h2-font {
     padding: 50px 0 30px;
   }
@@ -141,17 +144,17 @@
 .noodle-tokushima-img-wrap {
   min-height: 200px;
 }
-@media screen and (min-width: 1025px) {
+@media screen and (min-width: 1024px) {
   .noodle-tokushima-img-wrap {
     height: 320px;
-    margin: 110px 40px 10px;
+    margin: 0 40px;
   }
 }
 
 .noodle-tokushima-img {
   height: 100%;
 }
-@media screen and (min-width: 1025px) {
+@media screen and (min-width: 1024px) {
   .noodle-tokushima-img {
     height: auto;
   }
@@ -190,13 +193,14 @@
 /*----- 飾り画像 -----*/
 .noodle-deco-img-wrap {
   height: 307px;
-  padding: 20px 0;
+  padding: 40px 0 20px;
 }
 .noodle-deco-img {
   height: 100%;
 }
 @media screen and (min-width: 600px) {
   .noodle-deco-img-wrap {
+    height: 340px;
     margin: 0 20%;
   }
 }
@@ -209,9 +213,9 @@
 .noodle-naruchuru-wrap {
   padding: 0 45px;
   text-align: left;
-  background: url(../img/IMG_1304.jpg);
+  background: url(../img/img_noodle.jpg);
   background-size: cover;
-  /* ↓ 同じく背景画像の透過風加工 */
+  /* ↓ 背景画像の透過風加工です、正規の画像に差し替え次第削除 */
   background-color: rgba(255, 255, 255, 0.8);
   background-blend-mode: lighten;
 }
@@ -219,6 +223,9 @@
   .noodle-naruchuru-wrap {
     padding: 0 20%;
   }
+}
+.noodle-naruchuru .bold:nth-last-of-type(1) {
+  padding-bottom: 100px;
 }
 
 /*---------------------------------*/
@@ -230,7 +237,7 @@
 .noodle-tarai-wrap {
   padding: 0 45px;
   text-align: left;
-  background: url(../img/IMG_1304.jpg);
+  background: url(../img/img_noodle.jpg);
   background-size: cover;
   /* ↓ 背景画像の透過風加工です、正規の画像に差し替え次第削除 */
   background-color: rgba(255, 255, 255, 0.8);
@@ -241,28 +248,31 @@
     padding: 0 20%;
   }
 }
+.noodle-tarai .bold:nth-last-of-type(1) {
+  padding-bottom: 100px;
+}
 /*---------------------------------*/
 /* ---------- はしやすめ --------- */
 /*---------------------------------*/
 
 .noodle-kind {
   width: 100%;
+  margin: 0 auto;
   padding: 40px 0 60px;
   overflow: hidden;
   background-color: var(--main-color);
-  margin: 0 auto;
 }
 .noodle-kind .h3-font {
-  color: var(--white-color);
   padding: 10px 0 30px;
+  color: var(--white-color);
 }
 
 /*吹き出し(バルーン)のアウトライン*/
 .bln {
+  display: flex;
   width: 100%;
   margin: 15px auto;
   box-sizing: border-box;
-  display: flex;
   justify-content: center;
   align-items: center;
   overflow: hidden;
@@ -289,11 +299,11 @@
 	}
 } */
 
-/* 左アイコンのイメージ配置 画像100~200pxくらいでok */
+/* 左アイコンの配置 画像100~200pxくらいでok */
 .bln:before {
-  background-image: url(../img/neko.PNG);
-  border-radius: 50%;
   margin-left: 20px;
+  background-image: url(../img/icon_noodle.PNG);
+  border-radius: 50%;
 }
 
 /* 吹き出し中の文章アウトライン */
